@@ -1,0 +1,50 @@
+@import url(./sekcje/contacts.css);
+@import url(./sekcje/footer.css);
+@import url(./sekcje/fruits.css);
+@import url(./sekcje/header.css);
+@import url(./sekcje/hero.css);
+@import url(./sekcje/instructions.css);
+
+/* VARIABLES */
+:root {
+    --clr-red: #ae1332;
+    --clr-green: #a4cb66;
+    --clr-yellow: #f5ce13;
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+
+    --fnt-primary: "DM Sans", sans-serif;
+}
+
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ol,
+ul {
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding-inline: 0;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
+/* MAIN STYLES */
+body {
+    font-family: var(--fnt-primary);
+    background-color: var(--clr-red);
+}
