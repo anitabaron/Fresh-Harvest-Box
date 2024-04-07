@@ -55,3 +55,6 @@
   align-items: center;
   margin-left: 322px;
 }
+
+@media (max-width: 375px) {
+}
