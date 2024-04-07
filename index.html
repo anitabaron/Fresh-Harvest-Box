@@ -1,29 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fresh Harvest Box!</title>
-        <link rel="stylesheet" href="./css/main.css" />
-        <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-        />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Harvest Box!</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+  </head>
 
-    <body>
-        <!-- NA DOLE PRZYKŁAD JAK ZACZĄĆ DANĄ SEKCJĘ -->
-        <!-- CONTAINER JEST DLA KAŻDEJ SEKCJI OPRÓCZ MODALI -->
-        <section class="header">
-            <div class="container"></div>
-            <div class="mobile-menu"></div>
-        </section>
-    </body>
+  <body>
+    <!-- NA DOLE PRZYKŁAD JAK ZACZĄĆ DANĄ SEKCJĘ -->
+    <!-- CONTAINER JEST DLA KAŻDEJ SEKCJI OPRÓCZ MODALI -->
+    <section class="contacts">
+      <div class="contacts__images">
+        <p class="contact__paragraph__big">
+          Fresh Harvest Box has got you covered
+        </p>
+        <ul class="contacts__ul">
+          <li class="contacts__li__melon">
+            <picture>
+              <source
+                media="(max-width: 767.9px)"
+                srcset="
+                      ./images2/contatcs-melon-mobile.jpg,
+                      ./images2/contacts-melon-mobile@2x.jpg x2
+                    "
+              />
+              <source
+                media="(max-width: 1157.9px)"
+                srcset="
+                      ./images2/contatcs-melon-tablet.jpg,
+                      ./images2/contacts-melon-tablet@2x.jpg x2
+                    "
+              />
+              <source
+                media="(min-width: 1158px)"
+                srcset="
+                      ./images2/contatcs-melon-desktop.jpg,
+                      ./images2/contacts-melon-desktop@2x.jpg x2
+                    "
+              />
+              <img
+                class="contacts__images__fruits"
+                src="./images2/contatcs-melon-desktop.jpg"
+                srcset="
+                  ./images2/contatcs-melon-desktop.jpg,
+                  ./images2/contatcs-melon-desktop@2x.jpg
+                "
+                alt="Melon"
+                width="792px"
+              />
+            </picture>
+          </li>
+          <li class="contacts__li__berries">
+            <img
+              class="contacts__images__fruits"
+              src="./images2/contatcs-berry-desktop.jpg"
+              srcset="
+                ./images2/contatcs-berry-desktop.jpg,
+                ./images2/contatcs-berry-desktop@2x.jpg
+              "
+              alt="American berries"
+              width="400px"
+            />
+          </li>
+        </ul>
+        <div class="contacts__subscription">
+          <p class="contact__paragraph__small">
+            Our boxes are packed with delicious, nutritious fruits and
+            vegetables, perfect for anyone looking to eat healthier or support
+            local farmers. Order your box today and start enjoying the best that
+            nature has to offer!
+          </p>
+          <form class="contacts__form">
+            <label class="contacts__label">
+              <input
+                class="contacts__form__input"
+                name="email"
+                type="email"
+                placeholder="      Enter email..."
+              />
+              <button class="contacts__button" type="submit" value="Send">
+                Send
+              </button>
+            </label>
+          </form>
+        </div>
+      </div>
+      <!-- <div class="contacts__modal is-open">
+        <button class="contacts__modal__button" type="button">
+          <svg class="contacts__modal__button__shlash" width="14" height="14">
+            <use href="./images2/shlash.svg#icon-Vector"></use>
+          </svg>
+          <svg
+            class="contacts__modal__button__backshlash"
+            width="14"
+            height="14"
+          >
+            <use href="./images2/shlash.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <img
+          class="contacts__raspberry"
+          src="./images2/modalthank-raspberry-desktop-tablet-min.png"
+          srcset="
+            ./images2/modalthank-raspberry-desktop-tablet-min.png,
+            ./images2/modalthank-raspberry-desktop-tablet@2x.png
+          "
+          width="278"
+        />
+        <div class="contacts__text">
+          <h3 class="contacts__h3">THANK YOU</h3>
+          <p class="contacts__paragraph__modal">
+            Thank you for your order! Our team is preparing your box with fresh,
+            delicious fruits and vegetables, and we'll deliver it straight to
+            your doorstep. We appreciate your business and look forward to
+            providing you with the best possible experience!
+          </p>
+        </div>
+      </div> -->
+    </section>
+  </body>
 </html>
