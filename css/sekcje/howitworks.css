@@ -1,74 +1,90 @@
 /* ------------------------------MOBILE */
 
-.howitworks {
-    padding-top: 80px;
-    margin: 0 auto;
+.container.howitworks {
+  padding-top: 80px;
+  margin: 0 auto;
 }
 
 .howitworks-title {
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 .howitworks-text {
-    text-align: center;
-    margin-bottom: 44px;
+  text-align: center;
+  margin-bottom: 44px;
 }
 
 .howitworks-fieldset {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 0 auto;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .howitworks-field {
-    width: 335px;
-    height: 112px;
-    border-radius: 20px;
-    background-color: var(--clr-white);
-    display: flex;
-    align-items: center;
-    padding: 20px;
+  width: 335px;
+  height: 112px;
+  border-radius: 20px;
+  background-color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  padding: 20px;
 }
 
 .howitworks-steps-btn {
-    background-color: var(--clr-red);
-    width: 136px;
-    height: 48px;
-    border-radius: 200px;
-    border: none;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.33333;
-    letter-spacing: -0.04em;
-    color: var(--clr-white);
-    margin: 12px 0;
-    margin-right: 14px;
-    display: inline;
+  background-color: var(--clr-red);
+  min-width: 136px;
+  height: 48px;
+  border-radius: 200px;
+  border: none;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33333;
+  letter-spacing: -0.04em;
+  color: var(--clr-white);
+  margin: 12px 0;
+  margin-right: 14px;
+  display: block;
+  cursor: pointer;
 }
 
 .green {
-    background-color: var(--clr-green);
+  background-color: var(--clr-green);
 }
 
 .yellow {
-    background-color: var(--clr-yellow);
+  background-color: var(--clr-yellow);
 }
 
-.howitworks-description {
-    color: var(--clr-black);
-    text-align: center;
+.howitworks-description.p-all {
+  color: var(--clr-black);
+  text-align: left;
+  max-width: 130px;
 }
 
 /* ------------------------------TABLET */
 
 @media (min-width: 768px) {
-}
+  .howitworks-description.p-all {
+    max-width: 624px;
+  }
 
+  .howitworks-text {
+    max-width: 509px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+  }
+
+  .howitworks-field {
+    width: 389px;
+    height: 128px;
+  }
+}
 /* ------------------------------DESKTOP */
 
 @media (min-width: 1280px) {
-    .howitworks-field {
-        flex-direction: row;
-    }
+  .howitworks-field {
+    flex-direction: row;
+  }
 }
