@@ -1,0 +1,56 @@
+.header {
+  font-family: var(--fnt-primary);
+  font-style: normal;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+  font-weight: 400;
+  padding: 16px 32px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--clr-red);
+}
+
+.logo-color {
+  fill: var(--clr-red);
+}
+
+.title-header {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--clr-red);
+}
+
+.basket {
+  position: absolute;
+  top: 11px;
+  right: 32px;
+}
+
+.basket-color {
+  fill: var(--clr-red);
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-left: 322px;
+}
