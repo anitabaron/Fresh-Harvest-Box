@@ -63,6 +63,15 @@
   max-width: 130px;
 }
 
+.howitworks-gif-animation {
+  margin: 0 auto;
+  margin-top: 44px;
+  border-radius: 20px;
+  width: 335px;
+  height: 476px;
+  object-fit: cover;
+}
+
 /* ------------------------------TABLET */
 
 @media (min-width: 768px) {
@@ -80,11 +89,24 @@
     width: 389px;
     height: 128px;
   }
+
+  .howitworks-gif-animation {
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 704px;
+    height: 476px;
+  }
 }
+
 /* ------------------------------DESKTOP */
 
 @media (min-width: 1280px) {
-  .howitworks-field {
+  .howitworks-fieldset {
     flex-direction: row;
+  }
+
+  .howitworks-gif-animation {
+    width: 860px;
+    height: 476px;
   }
 }
