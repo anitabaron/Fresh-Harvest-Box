@@ -1,0 +1,57 @@
+:root {
+  --clr-red: #ae1332;
+  --clr-green: #a4cb66;
+  --clr-yellow: #f5ce13;
+  --clr-black: #000000;
+  --clr-white: #ffffff;
+
+  --fnt-primary: "DM Sans", sans-serif;
+}
+
+/* ------------------------------MOBILE */
+
+.howitworks {
+  padding-top: 80px;
+}
+
+.howitworks-text {
+  text-align: center;
+}
+
+.howitworks-field {
+  width: 335px;
+  height: 112px;
+  border-radius: 20px;
+  background-color: var(--clr-white);
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.howitworks-steps {
+  background-color: var(--clr-red);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.33333;
+  letter-spacing: -0.04em;
+  color: var(--clr-white);
+}
+
+.howitworks-description {
+  color: var(--clr-black);
+  text-align: center;
+}
+
+/* ------------------------------TABLET */
+
+@media (min-width: 768px) {
+}
+
+/* ------------------------------DESKTOP */
+
+@media (min-width: 1280px) {
+  .howitworks-field {
+    flex-direction: row;
+  }
+}
