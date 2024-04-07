@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fresh Harvest Box!</title>
-        <link rel="stylesheet" href="./css/main.css" />
-        <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
-        />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh Harvest Box!</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+  </head>
 
-    <body>
-        <!-- NA DOLE PRZYKŁAD JAK ZACZĄĆ DANĄ SEKCJĘ -->
-        <!-- CONTAINER JEST DLA KAŻDEJ SEKCJI OPRÓCZ MODALI -->
-        <section class="header">
-            <div class="container"></div>
-            <div class="mobile-menu"></div>
-        </section>
-    </body>
+  <body>
+    <!-- NA DOLE PRZYKŁAD JAK ZACZĄĆ DANĄ SEKCJĘ -->
+    <!-- CONTAINER JEST DLA KAŻDEJ SEKCJI OPRÓCZ MODALI -->
+    <section class="header">
+      <div class="container"></div>
+      <div class="mobile-menu"></div>
+    </section>
+
+    <header class="header">
+      <div class="header__container">
+        <nav class="header__navigation">
+          <ul class="header__nav-list">
+            <li>
+              <a href="./index.html" class="header__nav-link">How It Works</a>
+            </li>
+            <li><a href="" class="header__nav-link">Fruits</a></li>
+            <li><a href="" class="header__nav-link">Contacts</a></li>
+          </ul>
+          <div class="header__logo">
+            <svg class="header__logo-header" width="16" height="16">
+              <use
+                href="./images/icons.svg#icon-logo"
+                class="header__logo-color"
+              />
+            </svg>
+            <p class="header__title">FRESH HARVEST BOX</p>
+          </div>
+          <svg class="header__basket" width="28" height="28">
+            <use
+              href="./images/icons.svg#icon-basket"
+              class="header__basket-color"
+            />
+          </svg>
+        </nav>
+      </div>
+    </header>
+  </body>
 </html>

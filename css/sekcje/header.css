@@ -3,52 +3,53 @@
   font-style: normal;
 }
 
-.header-container {
+.header__container {
   display: flex;
   justify-content: space-between;
   width: 1280px;
   margin: 0 auto;
   position: relative;
+  background-color: var(--clr-white);
 }
 
-.navigation {
+.header__navigation {
   display: flex;
 }
 
-.nav-list {
+.header__nav-list {
   display: flex;
   gap: 20px;
   font-weight: 400;
   padding: 16px 32px;
 }
 
-.nav-link {
+.header__nav-link {
   text-decoration: none;
   font-size: 14px;
   color: var(--clr-red);
 }
 
-.logo-color {
+.header__logo-color {
   fill: var(--clr-red);
 }
 
-.title-header {
+.header__title {
   font-weight: 700;
   font-size: 14px;
   color: var(--clr-red);
 }
 
-.basket {
+.header__basket {
   position: absolute;
   top: 11px;
   right: 32px;
 }
 
-.basket-color {
+.header__basket-color {
   fill: var(--clr-red);
 }
 
-.logo {
+.header__logo {
   display: flex;
   gap: 8px;
   align-items: center;
