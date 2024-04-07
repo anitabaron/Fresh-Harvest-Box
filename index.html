@@ -19,8 +19,6 @@
   </head>
 
   <body>
-    <!-- NA DOLE PRZYKŁAD JAK ZACZĄĆ DANĄ SEKCJĘ -->
-    <!-- CONTAINER JEST DLA KAŻDEJ SEKCJI OPRÓCZ MODALI -->
     <section class="contacts">
       <div class="contacts__images">
         <p class="contact__paragraph__big">
@@ -32,30 +30,30 @@
               <source
                 media="(max-width: 767.9px)"
                 srcset="
-                      ./images2/contatcs-melon-mobile.jpg,
-                      ./images2/contacts-melon-mobile@2x.jpg x2
+                      ./images/contatcs-melon-mobile.jpg,
+                      ./images/contacts-melon-mobile@2x.jpg x2
                     "
               />
               <source
                 media="(max-width: 1157.9px)"
                 srcset="
-                      ./images2/contatcs-melon-tablet.jpg,
-                      ./images2/contacts-melon-tablet@2x.jpg x2
+                      ./images/contatcs-melon-tablet.jpg,
+                      ./images/contacts-melon-tablet@2x.jpg x2
                     "
               />
               <source
                 media="(min-width: 1158px)"
                 srcset="
-                      ./images2/contatcs-melon-desktop.jpg,
-                      ./images2/contacts-melon-desktop@2x.jpg x2
+                      ./images/contatcs-melon-desktop.jpg,
+                      ./images/contacts-melon-desktop@2x.jpg x2
                     "
               />
               <img
                 class="contacts__images__fruits"
-                src="./images2/contatcs-melon-desktop.jpg"
+                src="./images/contatcs-melon-desktop.jpg"
                 srcset="
-                  ./images2/contatcs-melon-desktop.jpg,
-                  ./images2/contatcs-melon-desktop@2x.jpg
+                  ./images/contatcs-melon-desktop.jpg,
+                  ./images/contatcs-melon-desktop@2x.jpg
                 "
                 alt="Melon"
                 width="792px"
@@ -63,16 +61,39 @@
             </picture>
           </li>
           <li class="contacts__li__berries">
-            <img
-              class="contacts__images__fruits"
-              src="./images2/contatcs-berry-desktop.jpg"
-              srcset="
-                ./images2/contatcs-berry-desktop.jpg,
-                ./images2/contatcs-berry-desktop@2x.jpg
-              "
-              alt="American berries"
-              width="400px"
-            />
+            <picture>
+              <source
+                media="(max-width: 767.9px)"
+                srcset="
+                      ./images/contatcs-berry-tablet.jpg,
+                      ./images/contacts-berry-tablet@2x.jpg x2
+                    "
+              />
+              <source
+                media="(max-width: 1157.9px)"
+                srcset="
+                      ./images/contatcs-berry-tablet.jpg,
+                      ./images/contacts-berry-tablet@2x.jpg x2
+                    "
+              />
+              <source
+                media="(min-width: 1158px)"
+                srcset="
+                      ./images/contatcs-berry-desktop.jpg,
+                      ./images/contacts-berry-desktop@2x.jpg x2
+                    "
+              />
+              <img
+                class="contacts__images__fruits"
+                src="./images/contatcs-berry-desktop.jpg"
+                srcset="
+                  ./images/contatcs-berry-desktop.jpg,
+                  ./images/contatcs-berry-desktop@2x.jpg
+                "
+                alt="American berries"
+                width="400px"
+              />
+            </picture>
           </li>
         </ul>
         <div class="contacts__subscription">
@@ -97,28 +118,44 @@
           </form>
         </div>
       </div>
-      <!-- <div class="contacts__modal is-open">
+      <div class="contacts__modal is-open">
         <button class="contacts__modal__button" type="button">
           <svg class="contacts__modal__button__shlash" width="14" height="14">
-            <use href="./images2/shlash.svg#icon-Vector"></use>
-          </svg>
-          <svg
-            class="contacts__modal__button__backshlash"
-            width="14"
-            height="14"
-          >
-            <use href="./images2/shlash.svg#icon-Vector"></use>
+            <use href="./images/x.svg#icon-x1"></use>
           </svg>
         </button>
-        <img
-          class="contacts__raspberry"
-          src="./images2/modalthank-raspberry-desktop-tablet-min.png"
-          srcset="
-            ./images2/modalthank-raspberry-desktop-tablet-min.png,
-            ./images2/modalthank-raspberry-desktop-tablet@2x.png
-          "
-          width="278"
-        />
+        <picture>
+          <source
+            media="(max-width: 767.9px)"
+            srcset="
+                      ./images/modalthank-raspberry-mobile-min.png,
+                      ./images/modalthank-raspberry-mobile@2x.png x2
+                    "
+          />
+          <source
+            media="(max-width: 1157.9px)"
+            srcset="
+                      ./images/modalthank-raspberry-desktop-tablet-min.png,
+                      ./images/modalthank-raspberry-desktop-tablet@2x-min.png x2
+                    "
+          />
+          <source
+            media="(min-width: 1158px)"
+            srcset="
+                      ./images/modalthank-raspberry-desktop-tablet.png,
+                      ./images/modalthank-raspberry-desktop-tablet@2x.png x2
+                    "
+          />
+          <img
+            class="contacts__raspberry"
+            src="./images/modalthank-raspberry-desktop-tablet-min.png"
+            srcset="
+              ./images/modalthank-raspberry-desktop-tablet-min.png,
+              ./images/modalthank-raspberry-desktop-tablet@2x.png
+            "
+            width="278"
+          />
+        </picture>
         <div class="contacts__text">
           <h3 class="contacts__h3">THANK YOU</h3>
           <p class="contacts__paragraph__modal">
@@ -128,7 +165,7 @@
             providing you with the best possible experience!
           </p>
         </div>
-      </div> -->
+      </div>
     </section>
   </body>
 </html>
