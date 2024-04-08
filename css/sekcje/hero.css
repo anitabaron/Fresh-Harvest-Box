@@ -1,0 +1,68 @@
+h1 {
+  font-family: var(--fnt-primary);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+
+  width: 898px;
+  height: 198px;
+  top: 114px;
+  left: 191px;
+  color: var(--clr-white);
+  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 100%;
+}
+
+.hero__heading {
+  display: flex;
+  width: 898px;
+  height: 198px;
+  top: 114px;
+  left: 191px;
+  z-index: 2;
+}
+
+.hero__foto-strawberry {
+  width: 100%;
+  position: relative;
+  padding-top: 89px;
+  padding-left: 937px;
+}
+
+.hero__text {
+  font-family: var(--fnt-primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  color: var(--clr-white);
+
+}
+
+.hero__text-heading {
+  font-family: var(--clr-white);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  text-align: left;
+  box-shadow: 0px 4px 70px 0px #0000001a;
+}
+
+.hero__foto-girl {
+  position: fixed;
+  width: 452px;
+  height: 702px;
+  top: 172px;
+  left: 414px;
+  gap: 0px;
+  border-radius: 250px 250px 250px 250px;
+  opacity: 0px;
+}
