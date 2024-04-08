@@ -6,23 +6,16 @@
   letter-spacing: 0.01em;
   text-align: center;
   text-transform: uppercase;
-  position: absolute;
-
   color: var(--clr-white);
-  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
-}
-
-.container {
-  width: 100%;
 }
 
 .hero__heading {
+  position: absolute;
   display: flex;
   width: 898px;
-  height: 198px;
   top: 64px;
-  left: 191px;
   z-index: 2;
+  margin: 0 auto;
 }
 
 .hero__foto-strawberry {
@@ -34,7 +27,7 @@
 
 .hero__foto-banana {
   width: 100%;
-  position: relative;
+  position: absolute;
   padding-top: 100px;
   padding-left: 200px;
   transform: rotate(10deg);
@@ -59,15 +52,36 @@
   box-shadow: 0px 4px 70px 0px #0000001a;
 }
 
+.hero__foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero__foto-girl {
-  position: fixed;
+  position: relative;
   width: 452px;
   height: 702px;
-  top: 122px;
-  left: 414px;
-  gap: 0px;
   border-radius: 250px 250px 250px 250px;
-  opacity: 0px;
+  border: none;
   outline: 1px solid var(--clr-white);
   outline-offset: 20px;
+}
+
+.hero__button-shop-now {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  border: none;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  top: -80px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #ae1332;
+  transform: rotate(-14deg);
 }
