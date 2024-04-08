@@ -6,10 +6,7 @@
 
 .footer__container {
   display: flex;
-}
-
-.footer__photo {
-  padding: 80px 243px 80px 32px;
+  padding: 80px 32px;
 }
 
 .footer__icon-header {
