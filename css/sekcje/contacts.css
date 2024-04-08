@@ -1,8 +1,8 @@
 @media screen and (max-width: 767px) {
-  .contacts {
+  .container {
     display: flex;
     justify-content: center;
-    background-color: #ae1332;
+    background-color: var(--clr-red);
     width: 375px;
     position: relative;
   }
@@ -10,19 +10,20 @@
     max-width: 100%;
     background-position: center;
   }
-  .contacts__images__fruits {
+  .contacts__images-fruits {
     border-radius: 20px;
   }
-  .contacts__li__berries {
+  .contacts__li-berries {
     display: none;
-    position: relative;
-    z-index: 1;
   }
-  .contacts__li__melon {
+  .contacts__subscription {
+    display: none;
+  }
+  .contacts__li-melon {
     display: flex;
     justify-content: center;
     max-width: 100%;
-    margin: 0 auto;
+    margin-top: -31px;
   }
   .contacts__ul {
     display: flex;
@@ -33,22 +34,20 @@
     z-index: 1;
     padding-top: 80px;
   }
-  .contacts__subscription {
-    display: none;
-  }
   .contacts__images {
     margin-left: 32px;
     margin-right: 32px;
     text-align: center;
   }
-  .contact__paragraph__big {
+  .contact__paragraph-big {
+    font-family: var(--fnt-primary);
     font-weight: 500;
     font-size: 32px;
     line-height: 100%;
     letter-spacing: -0.04em;
     text-transform: uppercase;
     text-align: center;
-    color: #fff;
+    color: var(--clr-white);
     z-index: 2;
     position: absolute;
     margin: 0 auto;
@@ -72,22 +71,24 @@
     border-radius: 20px;
   }
   .contacts__h3 {
+    font-family: var(--fnt-primary);
     font-weight: 500;
     font-size: 28px;
     line-height: 100%;
     letter-spacing: -0.04em;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--clr-white);
     text-align: center;
     padding: 14px;
   }
-  .contacts__paragraph__modal {
+  .contacts__paragraph-modal {
+    font-family: var(--fnt-primary);
     font-weight: 400;
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.04em;
     text-align: center;
-    color: #fff;
+    color: var(--clr-white);
   }
   .contacts__raspberry {
     background-color: transparent;
@@ -104,7 +105,7 @@
     margin-bottom: 40px;
   }
 
-  .contacts__modal__button {
+  .contacts__modal-button {
     background-color: transparent;
     width: 28px;
     height: 28px;
@@ -113,14 +114,10 @@
     margin-top: 20px;
     position: absolute;
   }
-  .contacts__modal__button__shlash {
+  .contacts__modal-button-shlash {
     stroke-width: 2px;
-    stroke: #fff;
-    color: white;
-  }
-  .contacts__modal__button__backshlash {
-    display: inline-block;
-    transform: rotate(45deg);
+    stroke: var(--clr-white);
+    color: var(--clr-white);
   }
   .contacts__modal.is-open {
     opacity: 1;
@@ -129,9 +126,9 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1157px) {
-  .contacts {
+  .container {
     display: block;
-    background-color: #ae1332;
+    background-color: var(--clr-red);
     width: 768px;
     position: relative;
   }
@@ -140,14 +137,15 @@
     margin-right: 32px;
     text-align: center;
   }
-  .contact__paragraph__big {
+  .contact__paragraph-big {
+    font-family: var(--fnt-primary);
     font-weight: 500;
     font-size: 54px;
     line-height: 100%;
     letter-spacing: -0.04em;
     text-transform: uppercase;
     text-align: center;
-    color: #fff;
+    color: var(--clr-white);
     max-width: 648px;
     max-height: 108px;
     margin-left: 28px;
@@ -164,10 +162,7 @@
     z-index: 1;
     padding-top: 80px;
   }
-  .contacts__li__melon {
-    width: 344px;
-  }
-  .contacts__li__berries {
+  .contacts__li-melon .contacts__li-berries {
     width: 344px;
   }
   .contacts__subscription {
@@ -175,13 +170,14 @@
     padding-bottom: 150px;
     position: relative;
   }
-  .contact__paragraph__small {
+  .contacts__paragraph-small {
+    font-family: var(--fnt-primary);
     font-weight: 400;
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.04em;
     text-align: center;
-    color: #fff;
+    color: var(--clr-white);
     max-width: 492px;
     margin: 0 auto;
     padding-bottom: 80px;
@@ -200,27 +196,36 @@
     border-color: red;
   }
   .contacts__button {
+    font-family: var(--fnt-primary);
     width: 102px;
     height: 48px;
     border: none;
     border-radius: 100px;
-    background-color: #9dc162;
+    background-color: var(--clr-green);
     font-weight: 400;
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.04em;
-    color: #fff;
-    position: relative;
-    margin-top: 121px;
-    margin-left: -105px;
+    color: var(--clr-white);
+    position: absolute;
+    margin-top: 0;
+    margin-left: -202px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    transition-property: all;
   }
-  .contacts__images__fruits {
+  .contacts__button:hover:focus {
+    background-color: #45a049;
+  }
+  .contacts__images-fruits {
     border-radius: 21px;
+    width: 344px;
   }
-
-  .contacts__form__input {
+  .contacts__form-input {
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid var(--clr-white);
     border-radius: 100px;
     width: 292px;
     height: 48px;
@@ -229,11 +234,9 @@
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.04em;
-    color: #fff;
+    color: var(--clr-white);
   }
-  .contacts__popup__toggle {
-    display: none;
-  }
+
   .contacts__modal {
     position: fixed;
     top: 10%;
@@ -245,21 +248,23 @@
     border-radius: 20px;
   }
   .contacts__h3 {
+    font-family: var(--fnt-primary);
     font-weight: 500;
     font-size: 40px;
     line-height: 110%;
     letter-spacing: -0.04em;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--clr-white);
     text-align: center;
   }
-  .contacts__paragraph__modal {
+  .contacts__paragraph-modal {
+    font-family: var(--fnt-primary);
     font-weight: 400;
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.04em;
     text-align: center;
-    color: #fff;
+    color: var(--clr-white);
   }
   .contacts__raspberry {
     background-color: transparent;
@@ -276,7 +281,7 @@
     margin-top: 68px;
     position: relative;
   }
-  .contacts__modal__button {
+  .contacts__modal-button {
     background-color: transparent;
     width: 28px;
     height: 28px;
@@ -285,14 +290,10 @@
     margin-top: 20px;
     position: absolute;
   }
-  .contacts__modal__button__shlash {
+  .contacts__modal-button-shlash {
     stroke-width: 2px;
-    stroke: #fff;
-    color: white;
-  }
-  .contacts__modal__button__backshlash {
-    display: inline-block;
-    transform: rotate(45deg);
+    stroke: var(--clr-white);
+    color: var(--clr-white);
   }
   .contacts__modal.is-open {
     opacity: 1;
@@ -301,9 +302,9 @@
   }
 }
 @media screen and (min-width: 1158px) {
-  .contacts {
+  .container {
     display: block;
-    background-color: #ae1332;
+    background-color: var(--clr-red);
     width: 1280px;
     position: relative;
   }
@@ -312,7 +313,8 @@
     margin-right: 32px;
     text-align: center;
   }
-  .contact__paragraph__big {
+  .contact__paragraph-big {
+    font-family: var(--fnt-primary);
     font-weight: 500;
     font-size: 64px;
     line-height: 100%;
@@ -321,7 +323,7 @@
     text-align: center;
     left: 238px;
     right: 238px;
-    color: #fff;
+    color: var(--clr-white);
     max-width: 740px;
     max-height: 128px;
     margin: 0 auto;
@@ -338,23 +340,22 @@
     z-index: 1;
     padding-top: 80px;
   }
-  .contacts__li__melon {
+  .contacts__li-melon {
     width: 792px;
-  }
-  .contacts__li__berries {
   }
   .contacts__subscription {
     padding-top: 80px;
     padding-bottom: 150px;
     position: relative;
   }
-  .contact__paragraph__small {
+  .contacts__paragraph-small {
+    font-family: var(--fnt-primary);
     font-weight: 400;
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.04em;
     text-align: center;
-    color: #fff;
+    color: var(--clr-white);
     max-width: 492px;
     margin: 0 auto;
     padding-bottom: 80px;
@@ -365,7 +366,7 @@
   }
   .contacts__label {
     position: relative;
-    padding-left: 100px;
+    padding-left: 70px;
     padding-top: 134px;
     padding-right: 100px;
   }
@@ -373,27 +374,36 @@
     border-color: red;
   }
   .contacts__button {
+    font-family: var(--fnt-primary);
     width: 102px;
     height: 48px;
     border: none;
     border-radius: 100px;
-    background-color: #9dc162;
+    background-color: var(--clr-green);
     font-weight: 400;
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.04em;
-    color: #fff;
-    position: relative;
-    margin-top: 121px;
-    margin-left: -105px;
+    color: var(--clr-white);
+    position: absolute;
+    margin-top: 80px;
+    margin-left: -202px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    transition-property: all;
   }
-  .contacts__images__fruits {
+  .contacts__button:hover:focus {
+    background-color: #45a049;
+  }
+  .contacts__images-fruits {
     border-radius: 21px;
   }
 
-  .contacts__form__input {
+  .contacts__form-input {
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid var(--clr-white);
     border-radius: 100px;
     width: 292px;
     height: 48px;
@@ -402,11 +412,8 @@
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.04em;
-    color: #fff;
+    color: var(--clr-white);
     margin-top: 80px;
-  }
-  .contacts__popup__toggle {
-    display: none;
   }
   .contacts__modal {
     position: fixed;
@@ -420,21 +427,23 @@
     border-radius: 20px;
   }
   .contacts__h3 {
+    font-family: var(--fnt-primary);
     font-weight: 500;
     font-size: 40px;
     line-height: 110%;
     letter-spacing: -0.04em;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--clr-white);
     text-align: center;
   }
-  .contacts__paragraph__modal {
+  .contacts__paragraph-modal {
+    font-family: var(--fnt-primary);
     font-weight: 400;
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.04em;
     text-align: center;
-    color: #fff;
+    color: var(--clr-white);
   }
   .contacts__raspberry {
     background-color: transparent;
@@ -451,7 +460,7 @@
     margin-top: 68px;
     position: relative;
   }
-  .contacts__modal__button {
+  .contacts__modal-button {
     background-color: transparent;
     width: 28px;
     height: 28px;
@@ -462,16 +471,15 @@
   }
   .contacts__modal__button__shlash {
     stroke-width: 2px;
-    stroke: #fff;
-    color: white;
-  }
-  .contacts__modal__button__backshlash {
-    display: inline-block;
-    transform: rotate(45deg);
+    stroke: var(--clr-white);
+    color: var(--clr-white);
   }
   .contacts__modal.is-open {
     opacity: 1;
     visibility: initial;
     pointer-events: all;
   }
+}
+.is-open {
+  display: none;
 }

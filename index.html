@@ -19,16 +19,16 @@
   </head>
 
   <body>
-    <section class="contacts">
+    <section class="container">
       <div class="contacts__images">
-        <p class="contact__paragraph__big">
-          Fresh Harvest Box has got you covered
+        <p class="contact__paragraph-big">
+          Fresh harvest box has got you covered
         </p>
         <ul class="contacts__ul">
-          <li class="contacts__li__melon">
+          <li class="contacts__li-melon">
             <picture>
               <source
-                media="(max-width: 767.9px)"
+                media="(max-width: 787px)"
                 srcset="
                       ./images/contatcs-melon-mobile.jpg,
                       ./images/contacts-melon-mobile@2x.jpg x2
@@ -49,26 +49,16 @@
                     "
               />
               <img
-                class="contacts__images__fruits"
+                class="contacts__images-fruits"
                 src="./images/contatcs-melon-desktop.jpg"
-                srcset="
-                  ./images/contatcs-melon-desktop.jpg,
-                  ./images/contatcs-melon-desktop@2x.jpg
-                "
                 alt="Melon"
                 width="792px"
+                height="502px"
               />
             </picture>
           </li>
-          <li class="contacts__li__berries">
+          <li class="contacts__li-berries">
             <picture>
-              <source
-                media="(max-width: 767.9px)"
-                srcset="
-                      ./images/contatcs-berry-tablet.jpg,
-                      ./images/contacts-berry-tablet@2x.jpg x2
-                    "
-              />
               <source
                 media="(max-width: 1157.9px)"
                 srcset="
@@ -84,20 +74,17 @@
                     "
               />
               <img
-                class="contacts__images__fruits"
+                class="contacts__images-fruits"
                 src="./images/contatcs-berry-desktop.jpg"
-                srcset="
-                  ./images/contatcs-berry-desktop.jpg,
-                  ./images/contatcs-berry-desktop@2x.jpg
-                "
                 alt="American berries"
                 width="400px"
+                height="502px"
               />
             </picture>
           </li>
         </ul>
         <div class="contacts__subscription">
-          <p class="contact__paragraph__small">
+          <p class="contacts__paragraph-small">
             Our boxes are packed with delicious, nutritious fruits and
             vegetables, perfect for anyone looking to eat healthier or support
             local farmers. Order your box today and start enjoying the best that
@@ -106,30 +93,30 @@
           <form class="contacts__form">
             <label class="contacts__label">
               <input
-                class="contacts__form__input"
+                class="contacts__form-input"
                 name="email"
                 type="email"
-                placeholder="      Enter email..."
+                placeholder="Enter email..."
               />
-              <button class="contacts__button" type="submit" value="Send">
-                Send
-              </button>
             </label>
+            <button class="contacts__button" type="submit" value="Send">
+              Send
+            </button>
           </form>
         </div>
       </div>
       <div class="contacts__modal is-open">
-        <button class="contacts__modal__button" type="button">
-          <svg class="contacts__modal__button__shlash" width="14" height="14">
+        <button class="contacts__modal-button" type="button">
+          <svg class="contacts__modal-button-shlash" width="14" height="14">
             <use href="./images/x.svg#icon-x1"></use>
           </svg>
         </button>
         <picture>
           <source
-            media="(max-width: 767.9px)"
+            media="(max-width: 787px)"
             srcset="
                       ./images/modalthank-raspberry-mobile-min.png,
-                      ./images/modalthank-raspberry-mobile@2x.png x2
+                      ./images/modalthank-raspberry-mobile@2x-min.png x2
                     "
           />
           <source
@@ -139,26 +126,16 @@
                       ./images/modalthank-raspberry-desktop-tablet@2x-min.png x2
                     "
           />
-          <source
-            media="(min-width: 1158px)"
-            srcset="
-                      ./images/modalthank-raspberry-desktop-tablet.png,
-                      ./images/modalthank-raspberry-desktop-tablet@2x.png x2
-                    "
-          />
           <img
             class="contacts__raspberry"
             src="./images/modalthank-raspberry-desktop-tablet-min.png"
-            srcset="
-              ./images/modalthank-raspberry-desktop-tablet-min.png,
-              ./images/modalthank-raspberry-desktop-tablet@2x.png
-            "
-            width="278"
+            width="278px"
+            height="239px"
           />
         </picture>
         <div class="contacts__text">
-          <h3 class="contacts__h3">THANK YOU</h3>
-          <p class="contacts__paragraph__modal">
+          <h3 class="contacts__h3">Thank you</h3>
+          <p class="contacts__paragraph-modal">
             Thank you for your order! Our team is preparing your box with fresh,
             delicious fruits and vegetables, and we'll deliver it straight to
             your doorstep. We appreciate your business and look forward to
