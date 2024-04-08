@@ -82,6 +82,62 @@
   line-height: 1;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: #ae1332;
+  color: var(--clr-red);
   transform: rotate(-14deg);
+}
+
+.hero__card {
+  border: none;
+  width: 249px;
+  height: 387px;
+  border-radius: 500px;
+  padding: 28px;
+}
+
+.yellow {
+  background-color: var(--clr-yellow);
+}
+
+.green {
+  background-color: var(--clr-green);
+}
+
+.hero__card-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.hero__card-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--clr-white);
+}
+
+.hero__pills-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 300px;
+}
+.hero__pills {
+  border: 1px solid var(--clr-white);
+  display: inline-block;
+  border-radius: 1000px;
+  padding: 12px 32px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--clr-white);
 }
