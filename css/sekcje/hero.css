@@ -1,17 +1,13 @@
-h1 {
+.hero__heading {
   font-family: var(--fnt-primary);
   font-size: 64px;
   font-weight: 500;
   line-height: 100%;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.01em;
   text-align: center;
   text-transform: uppercase;
   position: absolute;
 
-  width: 898px;
-  height: 198px;
-  top: 114px;
-  left: 191px;
   color: var(--clr-white);
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
 }
@@ -24,7 +20,7 @@ h1 {
   display: flex;
   width: 898px;
   height: 198px;
-  top: 114px;
+  top: 64px;
   left: 191px;
   z-index: 2;
 }
@@ -32,8 +28,16 @@ h1 {
 .hero__foto-strawberry {
   width: 100%;
   position: relative;
-  padding-top: 89px;
   padding-left: 937px;
+  padding-top: 39px;
+}
+
+.hero__foto-banana {
+  width: 100%;
+  position: relative;
+  padding-top: 100px;
+  padding-left: 200px;
+  transform: rotate(10deg);
 }
 
 .hero__text {
@@ -43,7 +47,6 @@ h1 {
   line-height: 129%;
   letter-spacing: -0.04em;
   color: var(--clr-white);
-
 }
 
 .hero__text-heading {
@@ -60,9 +63,11 @@ h1 {
   position: fixed;
   width: 452px;
   height: 702px;
-  top: 172px;
+  top: 122px;
   left: 414px;
   gap: 0px;
   border-radius: 250px 250px 250px 250px;
   opacity: 0px;
+  outline: 1px solid var(--clr-white);
+  outline-offset: 20px;
 }
