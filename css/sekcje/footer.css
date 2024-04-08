@@ -6,13 +6,13 @@
 .footer__container {
   display: flex;
   padding: 80px 32px;
+  justify-content: space-between;
 }
 
 .footer__photo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right: 243px;
 }
 
 .footer__logo-set {
@@ -40,6 +40,13 @@
   color: var(--clr-red);
 }
 
+.footer__sm-adress {
+  display: flex;
+  flex-direction: column;
+  width: 184px;
+  gap: 40px;
+}
+
 .footer__sm-icons {
   display: flex;
   gap: 30px;
@@ -51,6 +58,7 @@
 }
 
 .footer__address {
+  line-height: 1.3;
   text-decoration: none;
   font-style: normal;
   color: var(--clr-red);
