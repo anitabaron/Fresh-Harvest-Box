@@ -34,15 +34,10 @@
 }
 .contacts__modal {
   position: fixed;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
   top: 10%;
+  left: 50%;
   width: 335px;
-  height: 426px;
-  z-index: 9999;
-  margin-left: 3%;
+  transform: translateX(-50%);
   background-color: #e03f5e;
   border-radius: 20px;
 }
@@ -71,14 +66,13 @@
   width: 207px;
   height: 176px;
   position: relative;
-  margin-left: 64px;
-  margin-top: 40px;
+  margin: 40px 64px 20px 64px;
 }
 .contacts__text {
   width: 295px;
-  margin-left: 20px;
-  /* margin-right: 104px; */
+  margin: 0 auto;
   margin-bottom: 40px;
+  padding: 0px 20px;
 }
 
 .contacts__modal-button {
@@ -123,9 +117,8 @@
   }
   .contacts__subscription {
     display: block;
-    padding-top: 80px;
     max-width: 492px;
-    margin: 0 auto;
+    margin: 80px 106px;
   }
   .contacts__paragraph-small {
     font-weight: 400;
@@ -134,7 +127,6 @@
     letter-spacing: -0.04em;
     text-align: center;
     color: var(--clr-white);
-
     padding-bottom: 80px;
   }
   .contacts__label {
@@ -142,34 +134,6 @@
   }
   input[type="email"]:invalid {
     border-color: red;
-  }
-  .contacts__button {
-    font-family: var(--fnt-primary);
-    width: 102px;
-    height: 48px;
-    border: none;
-    border-radius: 100px;
-    background-color: var(--clr-green);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 129%;
-    letter-spacing: -0.04em;
-    color: var(--clr-white);
-    position: absolute;
-    margin-top: 0;
-    margin-left: -202px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    transition-property: all;
-  }
-  .contacts__button:hover:focus {
-    background-color: #45a049;
-  }
-  .contacts__images-fruits {
-    border-radius: 21px;
-    width: 344px;
   }
   .contacts__form-input {
     background-color: transparent;
@@ -183,51 +147,51 @@
     line-height: 129%;
     letter-spacing: -0.04em;
     color: var(--clr-white);
+    margin-left: 100px;
   }
-
-  .contacts__modal {
-    position: fixed;
-    top: 10%;
-    width: 600px;
-    height: 545px;
-    z-index: 9999;
-    margin-left: 10%;
-    background-color: #e03f5e;
-    border-radius: 20px;
-  }
-  .contacts__h3 {
-    font-family: var(--fnt-primary);
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 110%;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
-    color: var(--clr-white);
-    text-align: center;
-  }
-  .contacts__paragraph-modal {
-    font-family: var(--fnt-primary);
+  .contacts__button {
+    width: 102px;
+    height: 48px;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--clr-green);
     font-weight: 400;
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.04em;
-    text-align: center;
     color: var(--clr-white);
+    position: absolute;
+    margin: 0 auto;
+    margin-left: -103px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    transition-property: all;
   }
-  .contacts__raspberry {
-    background-color: transparent;
+  .contacts__button:hover:focus {
+    background-color: #45a049;
+  }
+  .contacts__images-fruits {
+    border-radius: 20px;
+  }
+  .contacts__modal {
+    width: 600px;
+  }
+  .contacts__h3 {
+    font-size: 40px;
+    line-height: 110%;
   }
   .contacts__text {
     width: 391px;
-    height: 130px;
-    margin-left: 105px;
-    margin-right: 104px;
-    margin-bottom: 80px;
+    margin: 0px 104px 80px 105px;
   }
   .contacts__raspberry {
-    margin-left: 161px;
-    margin-top: 68px;
+    background-color: transparent;
+    margin: 68px 161px 28px 161px;
     position: relative;
+    width: 278px;
+    height: 239px;
   }
   .contacts__modal-button {
     background-color: transparent;
@@ -238,91 +202,61 @@
     margin-top: 20px;
     position: absolute;
   }
-  .contacts__modal-button-shlash {
-    stroke-width: 2px;
-    stroke: var(--clr-white);
-    color: var(--clr-white);
-  }
-  .contacts__modal.is-open {
-    opacity: 1;
-    visibility: initial;
-    pointer-events: all;
-  }
 }
 @media screen and (min-width: 1280px) {
   .contacts {
-    display: block;
-    background-color: var(--clr-red);
-    width: 1280px;
-    position: relative;
+    padding-top: 150px;
   }
+  .container {
+    width: 1216px;
+    padding: 0 32px;
+  }
+  .contact__paragraph-big {
+    font-size: 64px;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+  .contacts__ul {
+    display: flex;
+    gap: 24px;
+    top: -31px;
+  }
+  .contacts__li-berries {
+    display: block;
+  }
+
   .contacts__images {
     margin-left: 32px;
     margin-right: 32px;
     text-align: center;
   }
-  .contact__paragraph-big {
-    font-family: var(--fnt-primary);
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 100%;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    left: 238px;
-    right: 238px;
-    color: var(--clr-white);
-    max-width: 740px;
-    max-height: 128px;
-    margin: 0 auto;
-    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
-    position: absolute;
-    z-index: 2;
-  }
-  .contacts__ul {
-    display: flex;
-    list-style: none;
-    padding-inline: 0;
-    gap: 24px;
-    position: relative;
-    z-index: 1;
-    padding-top: 80px;
-  }
+
   .contacts__li-melon {
     width: 792px;
   }
   .contacts__subscription {
-    padding-top: 80px;
-    padding-bottom: 150px;
-    position: relative;
+    display: block;
+    max-width: 556px;
+    margin: 80px 362px 150px 362px;
   }
   .contacts__paragraph-small {
-    font-family: var(--fnt-primary);
     font-weight: 400;
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.04em;
     text-align: center;
     color: var(--clr-white);
-    max-width: 492px;
-    margin: 0 auto;
-    padding-bottom: 80px;
-    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
   }
   .contacts__form {
     text-align: center;
   }
   .contacts__label {
     position: relative;
-    padding-left: 70px;
-    padding-top: 134px;
-    padding-right: 100px;
   }
   input[type="email"]:invalid {
     border-color: red;
   }
   .contacts__button {
-    font-family: var(--fnt-primary);
     width: 102px;
     height: 48px;
     border: none;
@@ -335,7 +269,7 @@
     color: var(--clr-white);
     position: absolute;
     margin-top: 80px;
-    margin-left: -202px;
+    margin-left: -103px;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -346,9 +280,8 @@
     background-color: #45a049;
   }
   .contacts__images-fruits {
-    border-radius: 21px;
+    border-radius: 20px;
   }
-
   .contacts__form-input {
     background-color: transparent;
     border: 1px solid var(--clr-white);
@@ -363,73 +296,7 @@
     color: var(--clr-white);
     margin-top: 80px;
   }
-  .contacts__form-input:placeholder {
-  }
-  .contacts__modal {
-    position: fixed;
-    top: 10%;
-    left: 25%;
-    width: 600px;
-    height: 545px;
-    z-index: 9999;
-    margin: 0px;
-    background-color: #e03f5e;
-    border-radius: 20px;
-  }
-  .contacts__h3 {
-    font-family: var(--fnt-primary);
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 110%;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
-    color: var(--clr-white);
-    text-align: center;
-  }
-  .contacts__paragraph-modal {
-    font-family: var(--fnt-primary);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 129%;
-    letter-spacing: -0.04em;
-    text-align: center;
-    color: var(--clr-white);
-  }
-  .contacts__raspberry {
-    background-color: transparent;
-  }
-  .contacts__text {
-    width: 391px;
-    height: 130px;
-    margin-left: 105px;
-    margin-right: 104px;
-    margin-bottom: 80px;
-  }
-  .contacts__raspberry {
-    margin-left: 161px;
-    margin-top: 68px;
-    position: relative;
-  }
-  .contacts__modal-button {
-    background-color: transparent;
-    width: 28px;
-    height: 28px;
-    border: none;
-    margin-left: 552px;
-    margin-top: 20px;
-    position: absolute;
-  }
-  .contacts__modal__button__shlash {
-    stroke-width: 2px;
-    stroke: var(--clr-white);
-    color: var(--clr-white);
-  }
-  .contacts__modal.is-open {
-    opacity: 1;
-    visibility: initial;
-    pointer-events: all;
-  }
 }
 .is-open {
-  display: none;
+  /* display: none; */
 }
