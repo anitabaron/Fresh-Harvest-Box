@@ -86,12 +86,17 @@
   transform: rotate(-14deg);
 }
 
+.hero__card-set {
+  display: flex;
+}
+
 .hero__card {
   border: none;
   width: 249px;
   height: 387px;
   border-radius: 500px;
   padding: 28px;
+  position: absolute;
 }
 
 .yellow {
@@ -140,4 +145,67 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--clr-white);
+}
+
+@media (min-width: 375px) {
+  .hero__card-set {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .hero__card.green {
+    position: static;
+  }
+
+  .hero__card.yellow {
+    position: static;
+  }
+
+  .hero__pills-set-mobileonly {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    column-gap: 10px;
+    max-width: 300px;
+  }
+
+  .hero__pills-set {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__card.green {
+    top: 1038px;
+    left: 62px;
+  }
+
+  .hero__card.yellow {
+    top: 903px;
+    right: 62px;
+  }
+
+  .hero__pills-set-mobileonly {
+    display: none;
+  }
+}
+
+@media (min-width: 1028px) {
+  .hero__card.green {
+    top: 560px;
+    left: 62px;
+  }
+
+  .hero__card.yellow {
+    top: 336px;
+    right: 62px;
+  }
+
+  .hero__pills-set-mobileonly {
+    display: none;
+  }
 }
