@@ -1,5 +1,9 @@
 /* SECTION MOBILE */
 
+.fruits__section {
+  padding-top: 80px;
+}
+
 /* Fruits text */
 
 .fruits__text {
@@ -7,8 +11,6 @@
   flex-direction: column;
   gap: 14px;
   margin: 0 auto 44px auto;
-  padding-top: 80px;
-}
 
 .fruits__title {
   font-weight: 500;
@@ -247,10 +249,13 @@ margin-bottom: 44px;
 @media 
 (min-width: 768px) {
 
+.fruits__section {
+  padding-top: 144px;
+}
+
 .fruits__text {
   width: 547px;
   margin: 0 auto 44px auto;
-  padding-top: 144px;
 }
 
 .fruits__title {
@@ -324,11 +329,14 @@ line-height: 1.1;
 @media 
 (min-width: 1280px) {
 
+.fruits__section {
+  padding-top: 150px;
+}
+
 /* Fruits text */
 
 .fruits__text {
   margin: 0 auto 44px auto;
-  padding-top: 150px;
 }
 
 /* Fruits boxes */
