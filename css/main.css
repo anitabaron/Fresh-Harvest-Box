@@ -3,7 +3,7 @@
 @import url(./sekcje/fruits.css);
 @import url(./sekcje/header.css);
 @import url(./sekcje/hero.css);
-@import url(./sekcje/instructions.css);
+@import url(./sekcje/howitworks.css);
 
 /* VARIABLES */
 :root {
@@ -47,4 +47,87 @@ img {
 body {
     font-family: var(--fnt-primary);
     background-color: var(--clr-red);
+}
+
+/* ------------------------------MOBILE */
+
+.container {
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.h1-mobile {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--clr-white);
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+}
+
+.h2-mobile {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--clr-white);
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+}
+
+.h3-all {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--clr-white);
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+}
+
+.p-all {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    color: var(--clr-white);
+    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------TABLET */
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    .h1-tablet {
+        font-size: 50px;
+        line-height: 1.08;
+    }
+
+    .h2-tablet-desktop {
+        font-size: 40px;
+        line-height: 1.1;
+    }
+}
+
+/* ------------------------------DESKTOP */
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding: 0 32px;
+    }
+
+    .h1-desktop {
+        font-size: 64px;
+        line-height: 1;
+    }
 }

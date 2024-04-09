@@ -19,6 +19,269 @@
   </head>
 
   <body>
+    <!-- NA DOLE PRZYKŁAD JAK ZACZĄĆ DANĄ SEKCJĘ -->
+    <!-- CONTAINER JEST DLA KAŻDEJ SEKCJI OPRÓCZ MODALI -->
+    <section class="header">
+      <div class="container"></div>
+      <div class="mobile-menu"></div>
+    </section>
+    
+    <section class="how-it-works">
+      <div class="container how-it-works__part">
+        <h2 class="how-it-works__title h2-mobile h2-tablet-desktop">
+          To order your fruit basket, simply follow these easy steps
+        </h2>
+        <p class="how-it-works__text p-all">
+          Our baskets are assembled with care and delivered straight to your
+          doorstep, so you can enjoy the taste of fresh fruit without ever
+          leaving your home. Whether you're looking for a healthy snack or a
+          thoughtful gift, our fruit baskets are the perfect choice.
+        </p>
+        <ul class="how-it-works__fieldset-list">
+          <li class="how-it-works__field">
+            <button type="button" class="how-it-works__steps-btn red">
+              First Step
+            </button>
+            <p class="how-it-works__description p-all">
+              Just choose the fruit you want to order by clicking on the
+              checkboxes next to it.
+            </p>
+          </li>
+          <li class="how-it-works__field">
+            <button type="button" class="how-it-works__steps-btn green">
+              Second Step
+            </button>
+            <p class="how-it-works__description p-all">
+              Click on the basket and fill out the form.
+            </p>
+          </li>
+          <li class="how-it-works__field">
+            <button type="button" class="how-it-works__steps-btn yellow">
+              Third Step
+            </button>
+            <p class="p-all how-it-works__description">
+              Sit back and relax! Your fresh fruit basket will be delivered.
+            </p>
+          </li>
+        </ul>
+        <div class="how-it-works__gif">
+          <img
+            class="how-it-works__gif-animation"
+            src="./images/howitworks-fresh-harvest-box.gif"
+            alt="Fruits animation"
+          />
+        </div>
+      </div>
+    </section>
+    
+     <section class="fruits__section">
+        <div class="container">
+          <div class="fruits__text">
+            <h2 class="fruits__title">ORGANIC FRUITS</h2>
+            <p class="fruits__discr">
+              Our organic fruits are hand-picked from local farms and delivered
+              straight to your doorstep, ensuring that you get the freshest and
+              most nutritious produce possible. We offer a wide selection of
+              organic fruits grown without the use of harmful pesticides or
+              chemicals.
+            </p>
+          </div>
+          <ul class="fruits__list">
+            <li class="fruits__item strawberry-pink">
+              <div class="fruits__box">
+                <h3 class="fruits__fruit">Strawberry</h3>
+                <p class="fruits__plant">Plant</p>
+                <div class="fruits__photo">
+                <img
+                  class="fruits__box-img"
+                  width="295"
+                  height="251"
+                  srcset="./images/fruits-strawberry-all.png 1x, 
+                  ./images/fruits-strawberry-all@2x.png 2x"
+                  src="./images/fruits-strawberry-all.png"
+                  alt="The photo shows strawberry"
+                />
+                </div>
+                <div class="fruits__price-box">
+                  <p class="fruits__price-value">100 UAH / kg</p>
+                </div>
+              </div>
+            </li>
+            <li class="fruits__item banana-yellow">
+              <div class="fruits__box">
+                <h3 class="fruits__fruit">Banana</h3>
+                <p class="fruits__plant">Plant</p>
+                <div class="fruits__photo">
+                <img
+                  class="fruits__box-img"
+                  width="295"
+                  height="251"
+                  srcset="./images/fruits-banana-all.png 1x,
+                   ./images/fruits-banana-all@2x.png 2x"
+                  src="./images/fruits-banana-all.png"
+                  alt="The photo shows Banana"
+                />
+                </div>
+                <div class="fruits__price-box">
+                  <p class="fruits__price-value">80 UAH / kg</p>
+              </div>
+            </li>
+            <li class="fruits__item watermelon-green">
+              <div class="fruits__box">
+               <h3 class="fruits__fruit">Watermelon</h3>
+                <p class="fruits__plant">Plant</p>
+                <div class="fruits__photo">
+                <img
+                  class="fruits__box-img"
+                  width="295"
+                  height="251"
+                  srcset="./images/fruits-watermelon-all.png 1x, 
+                  ./images/fruits-watermelon-all@2x.png 2x"
+                  src="./images/fruits-watermelon-all.png"
+                  alt="The photo shows Watermelon"
+                />
+                </div>
+                <div class="fruits__price-box">
+                  <p class="fruits__price-value">40 UAH / kg</p>
+              </div>
+            </li>
+            <li class="fruits__item lime-green">
+              <div class="fruits__box">
+                <h3 class="fruits__fruit">Lime</h3>
+                <p class="fruits__plant">Plant</p>
+                <div class="fruits__photo">
+                <img
+                  class="fruits__box-img"
+                  width="295"
+                  height="251"
+                  srcset="./images/fruits-lime-all.png 1x, 
+                  ./images/fruits-lime-all@2x.png 2x"
+                  src="./images/fruits-lime-all.png"
+                  alt="The photo shows Lime"
+                />
+                </div>
+                <div class="fruits__price-box">
+                  <p class="fruits__price-value">60 UAH / kg</p>
+              </div>
+            </li>
+            <li class="fruits__item apple-pink">
+              <div class="fruits__box">
+                <h3 class="fruits__fruit">Apple</h3>
+                <p class="fruits__plant">Plant</p>
+                <div class="fruits__photo">
+                <img
+                  class="fruits__box-img"
+                  width="295"
+                  height="251"
+                  srcset="./images/fruits-apple-all.png 1x, 
+                  ./images/fruits-apple-all@2x.png 2x"
+                  src="./images/fruits-apple-all.png"
+                  alt="The photo shows Apple"
+                />
+                </div>
+                <div class="fruits__price-box">
+                  <p class="fruits__price-value">50 UAH / kg</p>
+              </div>
+            </li>
+            <li class="fruits__item peach-pink">
+              <div class="fruits__box">
+                <h3 class="fruits__fruit">Peach</h3>
+                <p class="fruits__plant">Plant</p>
+                <div class="fruits__photo">
+                <img
+                  class="fruits__box-img"
+                  width="295"
+                  height="251"
+                  srcset="./images/fruits-peach-all.png 1x, 
+                  ./images/fruits-peach-all@2x.png 2x"
+                  src="./images/fruits-peach-all.png"
+                  alt="The photo shows Peach"
+                />
+                </div>
+                <div class="fruits__price-box">
+                  <p class="fruits__price-value">80 UAH / kg</p>
+              </div>
+            </li>
+            <li class="fruits__item plum-violet">
+              <div class="fruits__box">
+                <h3 class="fruits__fruit">Plum</h3>
+                <p class="fruits__plant">Plant</p>
+                <div class="fruits__photo">
+                <img
+                  class="fruits__box-img"
+                  width="295"
+                  height="251"
+                  srcset="./images/fruits-plums-all.png 1x, 
+                  ./images/fruits-plums-all@2x.png 2x"
+                  src="./images/fruits-plums-all.png"
+                  alt="The photo shows Plum"
+                />
+                </div>
+                <div class="fruits__price-box">
+                  <p class="fruits__price-value">40 UAH / kg</p>
+              </div>
+            </li>
+            <li class="fruits__item orange-pink">
+              <div class="fruits__box">
+                <h3 class="fruits__fruit">Orange</h3>
+                <p class="fruits__plant">Plant</p>
+                <div class="fruits__photo">
+                <img
+                  class="fruits__box-img"
+                  width="295"
+                  height="251"
+                  srcset="./images/fruits-orange-all.png 1x, 
+                  ./images/fruits-orange-all@2x.png 2x"
+                  src="./images/fruits-orange-all.png"
+                  alt="The photo shows Orange"
+                />
+                </div>
+                <div class="fruits__price-box">
+                  <p class="fruits__price-value">60 UAH / kg</p>
+              </div>
+            </li>
+            <li class="fruits__item kiwi-green">
+              <div class="fruits__box">
+                <h3 class="fruits__fruit">Kiwi</h3>
+                <p class="fruits__plant">Plant</p>
+                <div class="fruits__photo">
+                <img
+                  class="fruits__box-img"
+                  width="295"
+                  height="251"
+                  srcset="./images/fruits-kiwi-all.png 1x, 
+                  ./images/fruits-kiwi-all@2x.png 2x"
+                  src="./images/fruits-kiwi-all.png"
+                  alt="The photo shows Kiwi"
+                />
+                </div>
+                <div class="fruits__price-box">
+                  <p class="fruits__price-value">80 UAH / kg</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="fruits__btn-div">
+          <a
+            class="fruits__btn-link"
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            target="_blank"
+          >
+            <button 
+              class="fruits__btn" 
+              type="button">
+                <svg 
+                  class="fruits__btn-icon" 
+                  width="15" 
+                  height="14">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              <span class="fruits__order">ORDER</span>
+            </button>
+          </a>
+        </div>
+      </section>
+    
     <section class="contacts">
       <div class="container">
         <h2 class="contact__paragraph-big">
@@ -144,5 +407,6 @@
         </div>
       </div>
     </section>
+
   </body>
 </html>
