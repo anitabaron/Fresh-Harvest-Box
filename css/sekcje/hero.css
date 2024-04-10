@@ -1,3 +1,8 @@
+.container.hero {
+  width: 1280px;
+  margin: 0 auto;
+}
+
 .hero__heading {
   font-family: var(--fnt-primary);
   font-size: 64px;
@@ -11,8 +16,8 @@
 
 .hero__heading {
   position: absolute;
-  display: flex;
-  width: 898px;
+  /* display: flex;
+  width: 898px; */
   top: 64px;
   z-index: 2;
   margin: 0 auto;
@@ -25,14 +30,6 @@
   padding-top: 39px;
 }
 
-.hero__foto-banana {
-  width: 100%;
-  position: absolute;
-  padding-top: 100px;
-  padding-left: 200px;
-  transform: rotate(10deg);
-}
-
 .hero__text {
   font-family: var(--fnt-primary);
   font-weight: 400;
@@ -43,13 +40,14 @@
 }
 
 .hero__text-heading {
-  font-family: var(--clr-white);
+  color: var(--clr-white);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.04em;
   text-align: left;
   box-shadow: 0px 4px 70px 0px #0000001a;
+  max-width: 222px;
 }
 
 .hero__foto {
@@ -61,7 +59,6 @@
 .hero__foto-girl {
   position: relative;
   width: 452px;
-  height: 702px;
   border-radius: 250px 250px 250px 250px;
   border: none;
   outline: 1px solid var(--clr-white);
@@ -126,12 +123,6 @@
   color: var(--clr-white);
 }
 
-.hero__pills-set {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  max-width: 300px;
-}
 .hero__pills {
   border: 1px solid var(--clr-white);
   display: inline-block;
@@ -145,6 +136,11 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--clr-white);
+}
+
+.hero__pills-mobile {
+  width: 132px;
+  height: 38px;
 }
 
 @media (min-width: 375px) {
@@ -180,17 +176,41 @@
 
 @media (min-width: 768px) {
   .hero__card.green {
+    position: absolute;
     top: 1038px;
     left: 62px;
   }
 
   .hero__card.yellow {
+    position: absolute;
     top: 903px;
     right: 62px;
   }
 
+  .hero__foto-strawberry {
+    width: 100%;
+    position: relative;
+    padding-left: 623px;
+  }
+
+  .hero__foto-banana {
+    /* width: 100%; */
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 27px;
+    transform: rotate(10deg);
+  }
+
   .hero__pills-set-mobileonly {
     display: none;
+  }
+
+  .hero__pills-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 300px;
+    margin-right: 0;
   }
 }
 
@@ -207,5 +227,12 @@
 
   .hero__pills-set-mobileonly {
     display: none;
+  }
+  .hero__foto-strawberry {
+    padding-left: 937px;
+  }
+
+  .hero__foto-banana {
+    padding-left: 200px;
   }
 }
