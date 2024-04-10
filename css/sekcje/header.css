@@ -121,7 +121,6 @@
 }
 
 /* ------------------------------TABLET */
-/* ------------------------------DESKTOP */
 
 @media (min-width: 768px) {
   .header__menu-mobile,
@@ -129,6 +128,14 @@
     display: none;
   }
 
+  .header__nav-list {
+    padding-right: 94px;
+  }
+}
+
+/* ------------------------------DESKTOP */
+
+@media (min-width: 1280px) {
   .header__nav-list {
     padding-right: 322px;
   }
