@@ -2,12 +2,6 @@
   background-color: var(--clr-white);
 }
 
-.container {
-  display: flex;
-  padding: 80px 32px;
-  justify-content: space-between;
-}
-
 .footer__photo {
   display: flex;
   flex-direction: column;
