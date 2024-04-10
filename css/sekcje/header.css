@@ -1,3 +1,8 @@
+/* ------------------------------MOBILE */
+
+.header__top {
+  display: flex;
+}
 .header__navigation {
   display: flex;
   padding-left: 0;
@@ -47,6 +52,8 @@
   align-items: center;
   margin-left: 322px;
 }
+
+/* ------------------------------MOBILE only*/
 
 @media (max-width: 767px) {
   /* .container {
@@ -115,6 +122,9 @@
     fill: var(--clr-white);
   }
 }
+
+/* ------------------------------TABLET */
+/* ------------------------------DESKTOP */
 
 @media (min-width: 768px) {
   .header__menu-mobile,

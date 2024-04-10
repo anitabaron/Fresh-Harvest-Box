@@ -1,3 +1,5 @@
+/* ------------------------------MOBILE */
+
 .contacts {
   padding-top: 80px;
 }
@@ -18,7 +20,7 @@
   left: 0;
   z-index: -1;
 }
-.contact__paragraph-big {
+.contacts__paragraph-big {
   font-weight: 500;
   font-size: 32px;
   line-height: 100%;
@@ -99,7 +101,7 @@
     width: 768px;
     padding: 0 32px;
   }
-  .contact__paragraph-big {
+  .contacts__paragraph-big {
     font-size: 54px;
     max-width: 648px;
   }
@@ -207,7 +209,7 @@
     /* width: 1216px; */
     padding: 0 32px;
   }
-  .contact__paragraph-big {
+  .contacts__paragraph-big {
     font-size: 64px;
     max-width: 740px;
     margin: 0 auto;

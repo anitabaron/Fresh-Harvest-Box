@@ -22,7 +22,7 @@
   <body>
     
      <header class="header">
-      <div class="container white">
+      <div class="header__top white">
         <nav class="header__navigation">
           <ul class="header__nav-list">
             <li>
@@ -427,7 +427,7 @@
     
     <section class="contacts" id="contacts">
       <div class="container red">
-        <h2 class="contact__paragraph-big">
+        <h2 class="contacts__paragraph-big">
           Fresh harvest box has got you covered
         </h2>
         <ul class="contacts__ul">
@@ -437,21 +437,21 @@
                 media="(max-width: 767.9px)"
                 srcset="
                       ./images/contatcs-melon-mobile.jpg,
-                      ./images/contacts-melon-mobile@2x.jpg x2
+                      ./images/contatcs-melon-mobile@2x.jpg x2
                     "
               />
               <source
                 media="(max-width: 1279.9px)"
                 srcset="
                       ./images/contatcs-melon-tablet.jpg,
-                      ./images/contacts-melon-tablet@2x.jpg x2
+                      ./images/contatcs-melon-tablet@2x.jpg x2
                     "
               />
               <source
                 media="(min-width: 1280px)"
                 srcset="
                       ./images/contatcs-melon-desktop.jpg,
-                      ./images/contacts-melon-desktop@2x.jpg x2
+                      ./images/contatcs-melon-desktop@2x.jpg x2
                     "
               />
               <img
@@ -476,7 +476,7 @@
                 media="(min-width: 1280px)"
                 srcset="
                       ./images/contatcs-berry-desktop.jpg,
-                      ./images/contacts-berry-desktop@2x.jpg x2
+                      ./images/contatcs-berry-desktop@2x.jpg x2
                     "
               />
               <img
@@ -554,17 +554,20 @@
     <footer class="footer white">
       <div class="container">
         <div class="footer__photo">
-          <img
-            srcset="./images/footer-girl-desktop-tablet.jpg"
-            src="./images/footer-girl-desktop-tablet@2x.jpg"
-            width="349"
-            height="179"
-            alt="women"
-          />
+            <img
+              srcset="./images/footer-girl-desktop-tablet.jpg"
+              src="./images/footer-girl-desktop-tablet@2x.jpg"
+              width="349"
+              height="179"
+              alt="women"
+            />
           <div class="footer__logo-set">
-            <svg class="footer__icon-header" width="16" height="16">
-              
+              <svg class="footer__icon-header" width="16" height="16">
+                <use href="./images/icons.svg#icon-logo">
+              </svg>
+              <p class="header__logo-text">Fresh Harvest Box</p>
           </div>
+        </div>  
         <nav class="footer__navigation">
           <ul class="footer__nav-list">
             <li>
