@@ -1,153 +1,154 @@
-.container.hero {
-  width: 1280px;
-  margin: 0 auto;
-}
-
-.hero__heading {
-  font-family: var(--fnt-primary);
-  font-size: 64px;
-  font-weight: 500;
-  line-height: 100%;
-  letter-spacing: 0.01em;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--clr-white);
-}
-
-.hero__heading {
-  position: absolute;
-  /* display: flex;
-  width: 898px; */
-  top: 64px;
-  z-index: 2;
-  margin: 0 auto;
-}
-
-.hero__foto-strawberry {
-  width: 100%;
-  position: relative;
-  padding-left: 937px;
-  padding-top: 39px;
-}
-
-.hero__text {
-  font-family: var(--fnt-primary);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 129%;
-  letter-spacing: -0.04em;
-  color: var(--clr-white);
-}
-
-.hero__text-heading {
-  color: var(--clr-white);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: -0.04em;
-  text-align: left;
-  box-shadow: 0px 4px 70px 0px #0000001a;
-  max-width: 222px;
-}
-
-.hero__foto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hero__foto-girl {
-  position: relative;
-  width: 452px;
-  border-radius: 250px 250px 250px 250px;
-  border: none;
-  outline: 1px solid var(--clr-white);
-  outline-offset: 20px;
-}
-
-.hero__button-shop-now {
-  width: 114px;
-  height: 114px;
-  border-radius: 50%;
-  border: none;
-  display: block;
-  cursor: pointer;
-  position: relative;
-  top: -80px;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: var(--clr-red);
-  transform: rotate(-14deg);
-}
-
-.hero__card-set {
-  display: flex;
-}
-
-.hero__card {
-  border: none;
-  width: 249px;
-  height: 387px;
-  border-radius: 500px;
-  padding: 28px;
-  position: absolute;
-}
-
-.yellow {
-  background-color: var(--clr-yellow);
-}
-
-.green {
-  background-color: var(--clr-green);
-}
-
-.hero__card-title {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: -0.04em;
-  text-align: center;
-  color: var(--clr-white);
-}
-
-.hero__card-description {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--clr-white);
-}
-
-.hero__pills {
-  border: 1px solid var(--clr-white);
-  display: inline-block;
-  border-radius: 1000px;
-  padding: 12px 32px;
-
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16667;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--clr-white);
-}
-
-.hero__pills-mobile {
-  width: 132px;
-  height: 38px;
-}
+/* ------------------------------MOBILE */
 
 @media (min-width: 375px) {
+  .hero__heading {
+    font-family: var(--fnt-primary);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--clr-white);
+    position: absolute;
+    top: 106px;
+    z-index: 2;
+    max-width: 355px;
+  }
+  .hero__foto-strawberry {
+    width: 100%;
+    position: relative;
+    top: 20px;
+    left: 220px;
+    transform: scale(0.7);
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero__foto-banana {
+    width: 100%;
+    position: relative;
+    top: -50px;
+    right: 100px;
+    transform: rotate(10deg);
+    transform: scale(0.6);
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero__text {
+    font-family: var(--fnt-primary);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.04em;
+    color: var(--clr-white);
+  }
+
+  .hero__text-heading {
+    color: var(--clr-white);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    box-shadow: 0px 4px 70px 0px #0000001a;
+    max-width: 222px;
+    padding-bottom: 44px;
+  }
+
+  .hero__foto {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__foto-girl {
+    position: relative;
+    width: 452px;
+    border-radius: 250px 250px 250px 250px;
+    border: none;
+    outline: 1px solid var(--clr-white);
+    outline-offset: 20px;
+  }
+
+  .hero__button-shop-now {
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: -80px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: var(--clr-red);
+    transform: rotate(-14deg);
+  }
+
+  .hero__card-set {
+    display: flex;
+  }
+
+  .hero__card {
+    border: none;
+    width: 249px;
+    height: 387px;
+    border-radius: 500px;
+    padding: 28px;
+    position: absolute;
+  }
+
+  .hero__card-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: var(--clr-white);
+    padding-bottom: 40px;
+  }
+
+  .hero__card-description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--clr-white);
+  }
+
+  .hero__pills {
+    border: 1px solid var(--clr-white);
+    display: inline-block;
+    border-radius: 1000px;
+    padding: 12px 32px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--clr-white);
+  }
+
+  .hero__pills-mobile {
+    width: 132px;
+    height: 38px;
+  }
+
   .hero__card-set {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 44px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -160,12 +161,16 @@
     position: static;
   }
 
+  .hero__text-fruit-card {
+    margin: 0 auto;
+  }
+
   .hero__pills-set-mobileonly {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
-    column-gap: 10px;
+    gap: 8px;
     max-width: 300px;
   }
 
@@ -174,7 +179,13 @@
   }
 }
 
+/* ------------------------------TABLET */
+
 @media (min-width: 768px) {
+  . .hero__heading {
+    font-size: 64px;
+    top: 64px;
+  }
   .hero__card.green {
     position: absolute;
     top: 1038px;
@@ -214,7 +225,13 @@
   }
 }
 
+/* ------------------------------DESKTOP */
+
 @media (min-width: 1028px) {
+  .hero__heading {
+    /* display: flex;
+  width: 898px; */
+  }
   .hero__card.green {
     top: 560px;
     left: 62px;

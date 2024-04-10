@@ -1,17 +1,15 @@
-.header {
+/* .header {
   font-style: normal;
-}
+} */
 
 .container {
-  justify-content: space-between;
-  width: 1280px;
-  margin: 0 auto;
-  position: relative;
-  background-color: var(--clr-white);
+  /* justify-content: space-between;
+  position: relative; */
 }
 
 .header__navigation {
   display: flex;
+  padding-left: 0;
 }
 
 .header__nav-list {

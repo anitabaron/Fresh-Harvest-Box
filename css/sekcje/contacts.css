@@ -1,11 +1,7 @@
 .contacts {
   padding-top: 80px;
 }
-.container {
-  width: 375px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
+
 .contacts__images-fruits {
   border-radius: 20px;
 }
@@ -208,7 +204,7 @@
     padding-top: 150px;
   }
   .container {
-    width: 1216px;
+    /* width: 1216px; */
     padding: 0 32px;
   }
   .contact__paragraph-big {
