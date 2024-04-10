@@ -29,8 +29,7 @@
   position: relative;
   top: -60px;
   right: 120px;
-  transform: rotate(10deg);
-  transform: scale(0.4);
+  transform: rotate(10deg) scale(0.4);
   padding: 0;
   margin: 0;
 }
@@ -45,6 +44,7 @@
   box-shadow: 0px 4px 70px 0px #0000001a;
   max-width: 265px;
   padding-bottom: 44px;
+  background-color: transparent;
 }
 
 .hero__foto {
@@ -173,10 +173,19 @@
 /* ------------------------------TABLET */
 
 @media (min-width: 768px) {
-  .hero__heading {
-    font-size: 64px;
-    top: 64px;
+  .hero {
+    padding-bottom: 400px;
   }
+  .hero__heading {
+    font-size: 50px;
+    top: 64px;
+    max-width: 700px;
+  }
+
+  .hero__foto {
+    top: 65px;
+  }
+
   .hero__card.green {
     position: absolute;
     top: 1038px;
@@ -190,17 +199,13 @@
   }
 
   .hero__foto-strawberry {
-    width: 100%;
-    position: relative;
-    padding-left: 623px;
+    position: absolute;
+    transform: translateX(300px) translateY(20px) scale(0.7);
   }
 
   .hero__foto-banana {
-    /* width: 100%; */
     position: absolute;
-    padding-top: 100px;
-    padding-left: 27px;
-    transform: rotate(10deg);
+    transform: rotate(10deg) translateX(80px) translateY(220px) scale(0.7);
   }
 
   .hero__pills-set-mobileonly {
@@ -208,8 +213,12 @@
   }
 
   .hero__pills-set {
+    position: relative;
+    top: 350px;
+    left: 186px;
     display: flex;
     flex-wrap: wrap;
+    gap: 8px;
     justify-content: flex-end;
     max-width: 300px;
     margin-right: 0;
@@ -218,11 +227,16 @@
 
 /* ------------------------------DESKTOP */
 
-@media (min-width: 1028px) {
-  .hero__heading {
-    /* display: flex;
-  width: 898px; */
+@media (min-width: 1280px) {
+  .hero {
+    padding-bottom: 10px;
   }
+  .hero__heading {
+    font-size: 50px;
+    top: 64px;
+    max-width: 898px;
+  }
+
   .hero__card.green {
     top: 560px;
     left: 62px;
@@ -231,6 +245,11 @@
   .hero__card.yellow {
     top: 336px;
     right: 62px;
+  }
+
+  .hero__pills-set {
+    top: -250px;
+    left: 400px;
   }
 
   .hero__pills-set-mobileonly {
@@ -242,5 +261,12 @@
 
   .hero__foto-banana {
     padding-left: 200px;
+  }
+
+  .hero__text-heading {
+    position: relative;
+    top: -500px;
+    max-width: 225px;
+    padding-left: 30px;
   }
 }
