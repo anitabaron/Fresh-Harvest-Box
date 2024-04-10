@@ -28,7 +28,6 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--clr-white);
-  z-index: 2;
 }
 .contacts__modal {
   position: fixed;
@@ -38,6 +37,7 @@
   transform: translateX(-50%);
   background-color: #e03f5e;
   border-radius: 20px;
+  z-index: 5;
 }
 .contacts__h3 {
   font-family: var(--fnt-primary);
