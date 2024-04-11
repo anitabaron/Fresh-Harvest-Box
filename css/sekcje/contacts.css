@@ -1,204 +1,83 @@
 /* ------------------------------MOBILE */
 
 .contacts {
-  padding-top: 80px;
-
+    padding-top: 80px;
 }
 
 .contacts__images-fruits {
-  border-radius: 20px;
+    border-radius: 20px;
 }
 .contacts__li-berries {
-  display: none;
+    display: none;
 }
 .contacts__subscription {
-  display: none;
+    display: none;
 }
 .contacts__ul {
-  top: -43px;
-  list-style: none;
-  position: relative;
-  left: 0;
-  z-index: 0;
+    top: -43px;
+    list-style: none;
+    position: relative;
+    left: 0;
+    z-index: 0;
 }
 .contacts__paragraph-big {
-  font-family: var(--fnt-primary);
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 100%;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--clr-white);
-  z-index: 1;
-  position: relative;
-  padding: 0 20px;
+    font-family: var(--fnt-primary);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--clr-white);
+    z-index: 1;
+    position: relative;
+    padding: 0 20px;
 }
 .contacts__modal {
-  position: fixed;
-  top: 10%;
-  left: 50%;
-  width: 335px;
-  transform: translateX(-50%);
-  background-color: #e03f5e;
-  border-radius: 20px;
-  z-index: 5;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    width: 335px;
+    transform: translateX(-50%);
+    background-color: #e03f5e;
+    border-radius: 20px;
+    z-index: 5;
 }
 .contacts__h3 {
-  font-family: var(--fnt-primary);
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 100%;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: var(--clr-white);
-  text-align: center;
-  padding: 14px;
+    font-family: var(--fnt-primary);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: var(--clr-white);
+    text-align: center;
+    padding: 14px;
 }
 .contacts__paragraph-modal {
-  font-family: var(--fnt-primary);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 129%;
-  letter-spacing: -0.04em;
-  text-align: center;
-  color: var(--clr-white);
-}
-.contacts__raspberry {
-  background-color: transparent;
-  width: 207px;
-  height: 176px;
-  position: relative;
-  margin: 40px 64px 20px 64px;
-}
-.contacts__text {
-  width: 295px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  padding: 0px 20px;
-}
-
-.contacts__modal-button {
-  background-color: transparent;
-  width: 28px;
-  height: 28px;
-  border: none;
-  margin-left: 552px;
-  margin-top: 20px;
-  position: absolute;
-}
-.contacts__modal-button-shlash {
-  stroke-width: 2px;
-  stroke: var(--clr-white);
-  color: var(--clr-white);
-}
-.contacts__modal.is-open {
-  opacity: 1;
-  visibility: initial;
-  pointer-events: all;
-}
-
-/* ------------------------------TABLET */
-
-@media (min-width: 768px) and (max-width: 1279px) {
-  .contacts {
-    padding-top: 144px;
-  }
-  .container {
-    width: 768px;
-    padding: 0 32px;
-  }
-  .contacts__paragraph-big {
-    font-size: 54px;
-    max-width: 648px;
-  }
-  .contacts__ul {
-    display: flex;
-    gap: 16px;
-    top: -29px;
-  }
-  .contacts__li-berries {
-    display: block;
-  }
-  .contacts__subscription {
-    display: block;
-    max-width: 492px;
-    margin: 80px 106px;
-  }
-  .contacts__paragraph-small {
+    font-family: var(--fnt-primary);
     font-weight: 400;
     font-size: 14px;
     line-height: 129%;
     letter-spacing: -0.04em;
     text-align: center;
     color: var(--clr-white);
-    padding-bottom: 80px;
-  }
-  .contacts__label {
-    position: relative;
-  }
-  input[type="email"]:invalid {
-    border-color: red;
-  }
-  .contacts__form-input {
+}
+.contacts__raspberry {
     background-color: transparent;
-    border: 1px solid var(--clr-white);
-    border-radius: 100px;
-    width: 292px;
-    height: 48px;
-    opacity: 0.3;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 129%;
-    letter-spacing: -0.04em;
-    color: var(--clr-white);
-    margin-left: 100px;
-  }
-  .contacts__button {
-    width: 102px;
-    height: 48px;
-    border: none;
-    border-radius: 100px;
-    background-color: var(--clr-green);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 129%;
-    letter-spacing: -0.04em;
-    color: var(--clr-white);
-    position: absolute;
+    width: 207px;
+    height: 176px;
+    position: relative;
+    margin: 40px 64px 20px 64px;
+}
+.contacts__text {
+    width: 295px;
     margin: 0 auto;
-    margin-left: -103px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    transition-property: all;
-  }
-  .contacts__button:hover:focus {
-    background-color: #45a049;
-  }
-  .contacts__images-fruits {
-    border-radius: 20px;
-  }
-  .contacts__modal {
-    width: 600px;
-  }
-  .contacts__h3 {
-    font-size: 40px;
-    line-height: 110%;
-  }
-  .contacts__text {
-    width: 391px;
-    margin: 0px 104px 80px 105px;
-  }
-  .contacts__raspberry {
-    background-color: transparent;
-    margin: 68px 161px 28px 161px;
-    position: relative;
-    width: 278px;
-    height: 239px;
-  }
-  .contacts__modal-button {
+    margin-bottom: 40px;
+    padding: 0px 20px;
+}
+
+.contacts__modal-button {
     background-color: transparent;
     width: 28px;
     height: 28px;
@@ -206,105 +85,219 @@
     margin-left: 552px;
     margin-top: 20px;
     position: absolute;
-  }
+}
+.contacts__modal-button-shlash {
+    stroke-width: 2px;
+    stroke: var(--clr-white);
+    color: var(--clr-white);
+}
+.contacts__modal.is-open {
+    opacity: 1;
+    visibility: initial;
+    pointer-events: all;
+}
+
+/* ------------------------------TABLET */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .contacts {
+        padding-top: 144px;
+    }
+
+    .contacts__paragraph-big {
+        font-size: 54px;
+        max-width: 648px;
+    }
+    .contacts__ul {
+        display: flex;
+        gap: 16px;
+        top: -29px;
+    }
+    .contacts__li-berries {
+        display: block;
+    }
+    .contacts__subscription {
+        display: block;
+        max-width: 492px;
+        margin: 80px 106px;
+    }
+    .contacts__paragraph-small {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: var(--clr-white);
+        padding-bottom: 80px;
+    }
+    .contacts__label {
+        position: relative;
+    }
+    input[type="email"]:invalid {
+        border-color: red;
+    }
+    .contacts__form-input {
+        background-color: transparent;
+        border: 1px solid var(--clr-white);
+        border-radius: 100px;
+        width: 292px;
+        height: 48px;
+        opacity: 0.3;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.04em;
+        color: var(--clr-white);
+        margin-left: 100px;
+    }
+    .contacts__button {
+        width: 102px;
+        height: 48px;
+        border: none;
+        border-radius: 100px;
+        background-color: var(--clr-green);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.04em;
+        color: var(--clr-white);
+        position: absolute;
+        margin: 0 auto;
+        margin-left: -103px;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        transition-property: all;
+    }
+    .contacts__button:hover:focus {
+        background-color: #45a049;
+    }
+    .contacts__images-fruits {
+        border-radius: 20px;
+    }
+    .contacts__modal {
+        width: 600px;
+    }
+    .contacts__h3 {
+        font-size: 40px;
+        line-height: 110%;
+    }
+    .contacts__text {
+        width: 391px;
+        margin: 0px 104px 80px 105px;
+    }
+    .contacts__raspberry {
+        background-color: transparent;
+        margin: 68px 161px 28px 161px;
+        position: relative;
+        width: 278px;
+        height: 239px;
+    }
+    .contacts__modal-button {
+        background-color: transparent;
+        width: 28px;
+        height: 28px;
+        border: none;
+        margin-left: 552px;
+        margin-top: 20px;
+        position: absolute;
+    }
 }
 
 /* ------------------------------DESKTOP */
 
 @media screen and (min-width: 1280px) {
-  .contacts {
-    padding-top: 150px;
-  }
-  .container {
-    /* width: 1216px; */
-    padding: 0 32px;
-  }
-  .contacts__paragraph-big {
-    font-size: 64px;
-    max-width: 740px;
-    margin: 0 auto;
-  }
-  .contacts__ul {
-    display: flex;
-    gap: 24px;
-    top: -38px;
-  }
-  .contacts__li-berries {
-    display: block;
-  }
+    .contacts {
+        padding-top: 150px;
+    }
 
-  .contacts__images {
-    margin-left: 32px;
-    margin-right: 32px;
-    text-align: center;
-  }
+    .contacts__paragraph-big {
+        font-size: 64px;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+    .contacts__ul {
+        display: flex;
+        gap: 24px;
+        top: -38px;
+    }
+    .contacts__li-berries {
+        display: block;
+    }
 
-  .contacts__li-melon {
-    width: 792px;
-  }
-  .contacts__subscription {
-    display: block;
-    max-width: 556px;
-    margin: 80px 362px 150px 362px;
-  }
-  .contacts__paragraph-small {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 129%;
-    letter-spacing: -0.04em;
-    text-align: center;
-    color: var(--clr-white);
-  }
-  .contacts__form {
-    text-align: center;
-  }
-  .contacts__label {
-    position: relative;
-  }
-  input[type="email"]:invalid {
-    border-color: red;
-  }
-  .contacts__button {
-    width: 102px;
-    height: 48px;
-    border: none;
-    border-radius: 100px;
-    background-color: var(--clr-green);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 129%;
-    letter-spacing: -0.04em;
-    color: var(--clr-white);
-    position: absolute;
-    margin-top: 80px;
-    margin-left: -103px;
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    cursor: pointer;
-    transition-property: all;
-  }
-  .contacts__button:hover:focus {
-    background-color: #45a049;
-  }
-  .contacts__images-fruits {
-    border-radius: 20px;
-  }
-  .contacts__form-input {
-    background-color: transparent;
-    border: 1px solid var(--clr-white);
-    border-radius: 100px;
-    width: 292px;
-    height: 48px;
-    opacity: 0.3;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 129%;
-    letter-spacing: -0.04em;
-    color: var(--clr-white);
-    margin-top: 80px;
-  }
+    .contacts__images {
+        margin-left: 32px;
+        margin-right: 32px;
+        text-align: center;
+    }
+
+    .contacts__li-melon {
+        width: 792px;
+    }
+    .contacts__subscription {
+        display: block;
+        max-width: 556px;
+        margin: 80px 362px 150px 362px;
+    }
+    .contacts__paragraph-small {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: var(--clr-white);
+    }
+    .contacts__form {
+        text-align: center;
+    }
+    .contacts__label {
+        position: relative;
+    }
+    input[type="email"]:invalid {
+        border-color: red;
+    }
+    .contacts__button {
+        width: 102px;
+        height: 48px;
+        border: none;
+        border-radius: 100px;
+        background-color: var(--clr-green);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.04em;
+        color: var(--clr-white);
+        position: absolute;
+        margin-top: 80px;
+        margin-left: -103px;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        transition-property: all;
+    }
+    .contacts__button:hover:focus {
+        background-color: #45a049;
+    }
+    .contacts__images-fruits {
+        border-radius: 20px;
+    }
+    .contacts__form-input {
+        background-color: transparent;
+        border: 1px solid var(--clr-white);
+        border-radius: 100px;
+        width: 292px;
+        height: 48px;
+        opacity: 0.3;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.04em;
+        color: var(--clr-white);
+        margin-top: 80px;
+    }
 }
 .is-open {
-  display: none;
+    display: none;
 }
