@@ -193,6 +193,7 @@
     border: none;
     fill: var(--clr-white);
     position: relative;
+    cursor: pointer;
 }
 
 .fruits__btn-link {
