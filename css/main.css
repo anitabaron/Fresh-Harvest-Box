@@ -3,7 +3,7 @@
 @import url(./sekcje/fruits.css);
 @import url(./sekcje/header.css);
 @import url(./sekcje/hero.css);
-@import url(./sekcje/instructions.css);
+@import url(./sekcje/howitworks.css);
 
 /* VARIABLES */
 :root {
@@ -28,12 +28,15 @@ h4,
 h5,
 p,
 ol,
-ul {
+ul,
+menu {
     margin: 0;
+    font-family: inherit;
 }
 
 ol,
-ul {
+ul,
+menu {
     list-style: none;
     padding-inline: 0;
 }
@@ -44,23 +47,93 @@ img {
 }
 
 /* MAIN STYLES */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--fnt-primary);
     background-color: var(--clr-red);
 }
 
-.container {
-    max-width: 375px;
+.red {
+    background-color: var(--clr-red);
 }
 
-@media (width > 768px) {
+.yellow {
+    background-color: var(--clr-yellow);
+}
+
+.green {
+    background-color: var(--clr-green);
+}
+
+/* ------------------------------MOBILE */
+
+.container {
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.h1-mobile {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+.h3-all {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--clr-white);
+}
+
+.p-all {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    color: var(--clr-white);
+}
+
+/* ------------------------------TABLET */
+
+@media (width >= 768px) and (width < 1280px) {
     .container {
         max-width: 768px;
+        padding: 0 32px;
+    }
+
+    .h1-tablet {
+        font-size: 50px;
+        line-height: 1.08;
+    }
+
+    .h2-tablet-desktop {
+        font-size: 40px;
+        line-height: 1.1;
     }
 }
 
-@media (width > 1280px) {
+/* ------------------------------DESKTOP */
+
+@media (width >= 1280px) {
     .container {
         max-width: 1280px;
+        padding: 0 32px;
+    }
+
+    .h1-desktop {
+        font-size: 64px;
+        line-height: 1;
+
     }
 }
