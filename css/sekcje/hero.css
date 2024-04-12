@@ -75,11 +75,21 @@
     letter-spacing: -0.04em;
     margin: 0 auto;
     max-width: 279px;
+}
+
+.hero__green-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
     margin-bottom: 44px;
 }
 
-.hero__card-set {
+.hero__yellow-card-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
 }
 
 .hero__card {
@@ -87,8 +97,7 @@
     width: 249px;
     height: 387px;
     border-radius: 500px;
-    padding: 28px;
-    position: absolute;
+    padding: 28px 24px 40px;
 }
 
 .hero__card-title {
@@ -98,7 +107,7 @@
     letter-spacing: -0.04em;
     text-align: center;
     color: var(--clr-white);
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .hero__card-description {
@@ -109,6 +118,15 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--clr-white);
+}
+
+.hero__pills-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+    max-width: 300px;
 }
 
 .hero__pills {
@@ -131,37 +149,8 @@
     height: 38px;
 }
 
-.hero__card-set {
-    display: flex;
-    flex-direction: column;
-    gap: 44px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-.hero__card.green {
-    position: static;
-}
-
-.hero__card.yellow {
-    position: static;
-}
-
 .hero__text-fruit-card {
     margin: 0 auto;
-}
-
-.hero__pills-set-mobileonly {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
-    gap: 8px;
-    max-width: 300px;
-}
-
-.hero__pills-set {
-    display: none;
 }
 
 /* ------------------------------TABLET */
@@ -187,6 +176,7 @@
 
     .hero__foto {
         top: -110px;
+        margin-bottom: -31px;
     }
 
     .hero__button-shop-now {
@@ -199,26 +189,29 @@
         margin: 0;
     }
 
+    .hero__cards-container {
+        display: flex;
+        gap: 142px;
+    }
+
+    .hero__green-card-container {
+        width: 279px;
+    }
+
+    .hero__yellow-card-container {
+        flex-direction: column-reverse;
+        width: 279px;
+    }
+
     .hero__card.green {
-        position: absolute;
-        top: 1038px;
-        left: 62px;
+        align-self: flex-end;
     }
 
     .hero__card.yellow {
-        position: absolute;
-        top: 903px;
-        right: 62px;
+        align-self: flex-start;
     }
 
-    .hero__pills-set-mobileonly {
-        display: none;
-    }
-
-    .hero__pills-set {
-        position: relative;
-        top: 350px;
-        left: 186px;
+    .hero__pills-container {
         display: flex;
         flex-wrap: wrap;
         gap: 8px;
@@ -232,44 +225,52 @@
 
 @media (min-width: 1280px) {
     .hero {
-        padding-bottom: 10px;
+        padding-top: 64px;
     }
+
     .hero__heading {
-        font-size: 50px;
-        top: 64px;
+        font-size: 64px;
+        letter-spacing: -0.04em;
         max-width: 898px;
+        margin: 0 auto;
     }
 
-    .hero__card.green {
-        top: 560px;
-        left: 62px;
-    }
-
-    .hero__card.yellow {
-        top: 336px;
-        right: 62px;
-    }
-
-    .hero__pills-set {
-        top: -250px;
-        left: 400px;
-    }
-
-    .hero__pills-set-mobileonly {
-        display: none;
-    }
     .hero__foto-strawberry {
-        padding-left: 937px;
+        top: -25px;
+        right: 223px;
     }
 
     .hero__foto-banana {
-        padding-left: 200px;
+        top: 135px;
+        left: 220px;
+    }
+
+    .hero__foto {
+        top: -140px;
+        margin-bottom: 0;
+    }
+
+    .hero__button-shop-now {
+        width: 114px;
+        height: 114px;
+        font-size: 28px;
     }
 
     .hero__text-heading {
-        position: relative;
-        top: -500px;
-        max-width: 225px;
-        padding-left: 30px;
+        max-width: 222px;
+        margin: 0;
+    }
+
+    .hero__green-card-container {
+        position: absolute;
+        top: 346px;
+        left: 62px;
+    }
+
+    .hero__yellow-card-container {
+        flex-direction: column-reverse;
+        position: absolute;
+        top: 272px;
+        right: 62px;
     }
 }

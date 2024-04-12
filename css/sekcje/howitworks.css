@@ -111,8 +111,13 @@
 /* ------------------------------DESKTOP */
 
 @media (width >= 1280px) {
+    .how-it-works {
+        padding-top: 150px;
+    }
+
     .how-it-works__title {
         max-width: 624px;
+        font-size: 40px;
         margin: 0 auto 14px auto;
     }
 

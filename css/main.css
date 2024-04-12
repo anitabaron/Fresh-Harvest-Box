@@ -4,6 +4,7 @@
 @import url(./sekcje/header.css);
 @import url(./sekcje/hero.css);
 @import url(./sekcje/howitworks.css);
+@import url(./sekcje/your-order.css);
 
 /* VARIABLES */
 :root {
@@ -134,6 +135,5 @@ body {
     .h1-desktop {
         font-size: 64px;
         line-height: 1;
-
     }
 }

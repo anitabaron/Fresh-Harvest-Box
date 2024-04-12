@@ -4,22 +4,6 @@
     padding-top: 80px;
 }
 
-.contacts__images-fruits {
-    border-radius: 20px;
-}
-.contacts__li-berries {
-    display: none;
-}
-.contacts__subscription {
-    display: none;
-}
-.contacts__ul {
-    top: -43px;
-    list-style: none;
-    position: relative;
-    left: 0;
-    z-index: 0;
-}
 .contacts__paragraph-big {
     font-family: var(--fnt-primary);
     font-weight: 500;
@@ -33,6 +17,27 @@
     position: relative;
     padding: 0 20px;
 }
+
+.contacts__ul {
+    top: -43px;
+    list-style: none;
+    position: relative;
+    left: 0;
+    z-index: 0;
+}
+
+.contacts__images-fruits {
+    border-radius: 20px;
+}
+
+.contacts__li-berries {
+    display: none;
+}
+
+.contacts__subscription {
+    display: none;
+}
+
 .contacts__modal {
     position: fixed;
     top: 10%;
@@ -43,6 +48,34 @@
     border-radius: 20px;
     z-index: 5;
 }
+
+.contacts__modal.is-open {
+    opacity: 1;
+    visibility: initial;
+    pointer-events: all;
+}
+
+.contacts__modal-button-shlash {
+    stroke-width: 2px;
+    stroke: var(--clr-white);
+    color: var(--clr-white);
+}
+
+.contacts__raspberry {
+    background-color: transparent;
+    width: 207px;
+    height: 176px;
+    position: relative;
+    margin: 40px 64px 20px 64px;
+}
+
+.contacts__text {
+    width: 295px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 0px 20px;
+}
+
 .contacts__h3 {
     font-family: var(--fnt-primary);
     font-weight: 500;
@@ -54,6 +87,7 @@
     text-align: center;
     padding: 14px;
 }
+
 .contacts__paragraph-modal {
     font-family: var(--fnt-primary);
     font-weight: 400;
@@ -62,19 +96,6 @@
     letter-spacing: -0.04em;
     text-align: center;
     color: var(--clr-white);
-}
-.contacts__raspberry {
-    background-color: transparent;
-    width: 207px;
-    height: 176px;
-    position: relative;
-    margin: 40px 64px 20px 64px;
-}
-.contacts__text {
-    width: 295px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-    padding: 0px 20px;
 }
 
 .contacts__modal-button {
@@ -85,16 +106,6 @@
     margin-left: 552px;
     margin-top: 20px;
     position: absolute;
-}
-.contacts__modal-button-shlash {
-    stroke-width: 2px;
-    stroke: var(--clr-white);
-    color: var(--clr-white);
-}
-.contacts__modal.is-open {
-    opacity: 1;
-    visibility: initial;
-    pointer-events: all;
 }
 
 /* ------------------------------TABLET */
@@ -107,7 +118,9 @@
     .contacts__paragraph-big {
         font-size: 54px;
         max-width: 648px;
+        margin: 0 auto;
     }
+
     .contacts__ul {
         display: flex;
         gap: 16px;
@@ -297,7 +310,4 @@
         color: var(--clr-white);
         margin-top: 80px;
     }
-}
-.is-open {
-    display: none;
 }

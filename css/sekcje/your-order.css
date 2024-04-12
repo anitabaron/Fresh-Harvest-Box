@@ -6,10 +6,22 @@
 
 /* Okno modalne YOUR ORDER*/
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* MOBILE  */
 
 .backdrop {
-    z-index: 100000;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -21,6 +33,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 99;
 }
 
 .backdrop.is-open {
@@ -29,7 +42,7 @@
     pointer-events: auto;
 }
 
-.modal {
+.modal__your-order {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -38,64 +51,69 @@
     transform: translate(-50%, -50%);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
         0 2px 1px 0 rgba(0, 0, 0, 0.2);
-    background: #fcfcfc;
-    padding: 20px 20px 20px 20px;
+    background-color: var(--clr-white);
+    padding: 20px;
     border-radius: 20px;
+    border: none;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 990;
 }
 
+.modal__title-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .modal__close-btn {
-    position: absolute;
     width: 24px;
     height: 24px;
-    border-radius: 4px;
     cursor: pointer;
-    top: 20px;
-    left: 20px;
-    gap: 108px;
-    background-color: var(--clr-white);
+    background-color: transparent;
     fill: var(--clr-red);
+    stroke: var(--clr-red);
+    stroke-width: 3px;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
-    align-items: center;
     justify-content: center;
+    padding: 0;
+    align-items: center;
 }
 
 .modal__close-btn:active,
 .modal__close-btn:hover,
 .modal__close-btn:focus {
-    background-color: var(--clr-white);
     border: none;
+    border-radius: 4px;
     fill: var(--clr-red);
+    background: rgba(174, 19, 50, 0.1);
 }
 
+.modal__close {
+    fill: blue;
+}
 .modal__title {
-    display: flex;
-    flex-direction: column;
-    width: 295px;
-    gap: 12px;
     font-weight: 500;
     font-size: 28px;
-    line-height: 28px;
+    line-height: 1;
     letter-spacing: -0.04em;
     text-transform: uppercase;
     color: var(--clr-red);
-    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
 .modal__list {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
+    padding-top: 40px;
 }
 
 .modal__picture {
     width: 295px;
     height: 119px;
     margin: 0 auto;
+    padding-right: 32px;
 }
 
 .modal__basket {
@@ -107,30 +125,59 @@
     margin: 0 auto;
 }
 
-.modal__check-btn {
+.modal__input-checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    top: 14px;
+    left: 85%;
+    background-color: transparent;
+    fill: var(--clr-white);
+    border: 1.5px solid var(--clr-white);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check {
+    cursor: pointer;
+}
+
+.check:checked + .field-descr span {
+    fill: transparent;
+}
+
+.modal__temporary-absolute {
     position: absolute;
+    left: 200px;
+}
+
+.input-checkbox {
+    position: relative;
+    top: 14px;
+    left: 223px;
     width: 20px;
     height: 20px;
     border-radius: 4px;
     cursor: pointer;
-    top: 14px;
-    left: 223px;
-    background-color: var(--clr-white);
-    fill: black;
-    border: 1px solid var(--clr-white);
+    background-color: transparent;
+    fill: var(--clr-white);
+    border: 1.5px solid var(--clr-white);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
 }
 
-.modal__strawberry {
+.modal__basket-fruit-type {
     font-weight: 700;
     color: var(--clr-white);
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33333;
     letter-spacing: -0.04em;
     padding: 20px 5px 2px 20px;
 }
@@ -138,69 +185,148 @@
 .modal__plant {
     font-weight: 400;
     font-size: 14px;
-    color: var(--clr-white);
-    line-height: 18px;
+    line-height: 1.28571;
     letter-spacing: -0.02em;
-    padding: 2 118 55px 20px;
+    color: var(--clr-white);
+    padding-left: 20px;
 }
 
 .modal__photo {
-    position: relative;
-    margin: 16px 32px 8px 175px;
-    width: 88px;
-    height: 95px;
-}
-
-.strawberry__basket {
-    display: flex;
-    background-color: #f8766b;
-    border-radius: 20px;
-}
-
-.apple__basket {
-    display: flex;
-    background-color: var(--clr-yellow);
-    border-radius: 20px;
-}
-
-.fruits__basket {
-    display: flex;
-    background-color: var(--clr-green);
-    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
 }
 
 .modal__button-send {
     font-family: inherit;
-    font-size: inherit;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
     color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
     background-color: var(--clr-green);
-    padding: 15px, 35px, 15px, 35px;
-    gap: 15px;
+    padding: 12px 24px 12px 24px;
     width: 92px;
     height: 42px;
+    display: block;
     border: none;
-    margin: 0 auto;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 100px;
+    margin-top: 6px;
 }
 
-/* TABLET */
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 14px;
+}
 
-@media (min-width: 768px) {
-    .modal {
+.modal__form-cards-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 26px;
+}
+
+.form-input-range:out-of-range {
+    border: 10px solid red;
+}
+
+.input {
+    gap: 14px;
+    opacity: 30%;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    border: 1px solid #000;
+    border-radius: 100px;
+    width: 295px;
+    height: 46px;
+}
+
+.input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    color: #000;
+}
+
+.input__comment {
+    gap: 14px;
+    opacity: 30%;
+    border-radius: 20px;
+    width: 360px;
+    height: 145px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.04em;
+    color: #000;
+}
+
+.comment__label {
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 295px;
+    height: 132px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+}
+
+.form__label .form__comment {
+    font-family: inherit;
+    font-size: inherit;
+    width: 400;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    position: relative;
+    margin: 15px auto 24px auto;
+    opacity: 50;
+}
+
+.form__label-fruits {
+    display: flex;
+}
+
+.input__container-fruits {
+    border-radius: 20px;
+    width: 295px;
+    height: 119px;
+}
+
+.modal__forms-cards--peach {
+    background-color: #f8766b;
+}
+
+.modal__forms-cards--citrus {
+    background-color: #edd251;
+}
+
+.modal__forms-cards--mint {
+    background-color: #9dc262;
+}
+
+/* ------------------------------TABLET */
+
+@media (width >= 768px) {
+    .modal__your-order {
         width: 704px;
         height: 853px;
+        padding: 40px;
     }
 
     .modal__title {
-        width: 232px;
-        margin: 40px auto 40px auto;
         font-size: 40px;
-        line-height: 44px;
+        line-height: 1.1;
+    }
+
+    .modal__close-btn {
+        width: 28px;
+        height: 28px;
     }
 
     .modal__list {
@@ -211,16 +337,14 @@
         gap: 12px;
     }
 
+    .modal__check-btn {
+        left: 166px;
+    }
+
     .modal__picture {
         width: 200px;
         height: 250px;
         margin: 0;
-    }
-
-    .modal__strawberry {
-        font-size: 18px;
-        line-height: 24px;
-        padding: 40px 0 2px 20px;
     }
 
     .modal__plant {
@@ -233,50 +357,56 @@
         min-height: 584px;
     }
 
-    .modal__photo {
-        position: relative;
-        width: 133px;
-        height: 148px;
-        margin-top: 88px;
-        margin-left: 34px;
+    .input {
+        width: 360px;
+        height: 48px;
     }
 
+    .comment__label {
+        width: 360px;
+        height: 145px;
+    }
     .modal__button-send {
         width: 114px;
         height: 48px;
     }
 
-    .order__background {
-        background-image: url(../images/modalorder-girl-tablet.png);
-        max-width: 469px;
+    .modal__form-cards-flow {
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .input__container-fruits {
+        width: 200px;
+        height: 250px;
+    }
+
+    .form__label-fruits {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal__background {
+        background-image: url(/images/modalorder-girl-tablet.png);
+        background-size: 40%;
         background-repeat: no-repeat;
-        background-position: right;
-        background-size: cover;
-        text-align: center;
-        margin-top: 389px;
-        margin-left: 414px;
+        background-position: bottom right;
     }
 }
 
 @media (min-width: 768px) and (min-resolution: 192dpi) {
-    .first-section {
-        background-image: url(../images/modalorder-girl-tablet@2x.png);
+    .modal__background {
+        background-image: url(/images/modalorder-girl-tablet@2x.png);
     }
 }
 
-/* DESKTOP */
+/* ------------------------------DESKTOP */
 
-@media (min-width: 1158px) {
-    .modal {
+@media (width >= 1280px) {
+    .modal__your-order {
         width: 891px;
         height: 911px;
-        padding: 72px 24px 24px 24px;
-    }
-
-    .modal__title {
-        width: 232px;
-        gap: 20px;
-        margin: 40px auto auto 40px;
     }
 
     .modal__list {
@@ -287,72 +417,41 @@
         gap: 20px;
     }
 
+    .modal__check-btn {
+        left: 223px;
+    }
+
     .modal__picture {
         width: 257px;
         height: 308px;
     }
 
-    .modal__plant {
-        margin-left: 20px;
+    .modal__form-cards-flow {
+        gap: 20px;
     }
 
-    .modal__photo {
-        position: relative;
-        width: 173px;
-        height: 196px;
-        margin-top: 98px;
-        margin-left: 42px;
+    .input__container-fruits {
+        width: 257px;
+        height: 308px;
     }
 
-    /* FORMULARZ */
-
-    .modal__form {
-        display: flex;
-        flex-direction: column;
-        width: 360px;
-        height: 399px;
+    .modal__basket-fruit-type {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.16667;
+        letter-spacing: -0.04em;
     }
 
-    .form-input-range:out-of-range {
-        border: 10px solid red;
-    }
-
-    .input__container {
-        gap: 14px;
-        opacity: 30%;
-        border-radius: 100px;
-        width: 360px;
-        height: 48px;
-    }
-
-    .input__comment {
-        gap: 14px;
-        opacity: 30%;
-        border-radius: 20px;
-        width: 360px;
-        height: 145px;
-    }
-
-    .form__label .form__comment {
-        font-family: inherit;
-        font-size: inherit;
-        width: 400;
-        line-height: 18px;
-        letter-spacing: 0.04em;
-        position: relative;
-        margin: 15px auto 24px auto;
-        opacity: 50;
-    }
-
-    .order__background {
-        background-image: url(../images/modalorder-girl-desktop.png);
-        max-width: 471px;
-        padding: 188px 0;
+    .modal__background {
+        background-image: url(/images/modalorder-girl-tablet.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: bottom right;
     }
 }
 
-@media (min-width: 1158px) and (min-resolution: 192dpi) {
-    .first-section {
-        background-image: url(../images/modalorder-girl-desktop@2x.png);
+@media (min-width: 1280px) and (min-resolution: 192dpi) {
+    .modal__background {
+        background-image: url(/images/modalorder-girl-desktop@2x.png);
     }
 }

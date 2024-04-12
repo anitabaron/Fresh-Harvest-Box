@@ -202,64 +202,62 @@
                         shop now
                     </button>
                 </div>
-                <p class="hero__text-heading">
-                    Our expertly curated fruit baskets are made with the
-                    freshest, highest quality fruits available. Whether you are
-                    looking for a healthy snack or a gift for a loved one, Fresh
-                    Harvest Box has got you covered.
-                </p>
-                <div class="hero__card-set">
-                    <div class="hero__card green">
-                        <h2 class="hero__card-title">Fruit</h2>
-                        <img
-                            class="hero__text-fruit-card"
-                            srcset="
-                                ./images/hero-watermelon-all.png,
-                                ./images/hero-watermelon-all@2x.png 2x
-                            "
-                            src="./images/hero-watermelon-all.png"
-                            alt="Arbuzy"
-                            width="200"
-                            height="172"
-                        />
-                        <p class="hero__card-description">
-                            Refreshing and juicy, watermelon is the perfect
-                            summer treat and a great source of hydration
+
+                <div class="hero__cards-container">
+                    <div class="hero__green-card-container">
+                        <p class="hero__text-heading">
+                            Our expertly curated fruit baskets are made with the
+                            freshest, highest quality fruits available. Whether
+                            you are looking for a healthy snack or a gift for a
+                            loved one, Fresh Harvest Box has got you covered.
                         </p>
+                        <div class="hero__card green">
+                            <h2 class="hero__card-title">Fruit</h2>
+                            <img
+                                class="hero__text-fruit-card"
+                                srcset="
+                                    ./images/hero-watermelon-all.png,
+                                    ./images/hero-watermelon-all@2x.png 2x
+                                "
+                                src="./images/hero-watermelon-all.png"
+                                alt="Arbuzy"
+                                width="200"
+                                height="172"
+                            />
+                            <p class="hero__card-description">
+                                Refreshing and juicy, watermelon is the perfect
+                                summer treat and a great source of hydration
+                            </p>
+                        </div>
                     </div>
-                    <ul class="hero__pills-set-mobileonly">
-                        <li class="hero__pills hero__pills-mobile">#organic</li>
-                        <li class="hero__pills hero__pills-mobile">
-                            #products
-                        </li>
-                        <li class="hero__pills hero__pills-mobile">#basket</li>
-                        <li class="hero__pills hero__pills-mobile">#fruits</li>
-                    </ul>
-                    <div class="hero__card yellow">
-                        <h2 class="hero__card-title">Fruit</h2>
-                        <img
-                            class="hero__text-fruit-card"
-                            srcset="
-                                ./images/hero-basket-all.png,
-                                ./images/hero-basket-all@2x.png 2x
-                            "
-                            src="./images/hero-basket-all.png"
-                            alt="Kosz z truskawkami"
-                            width="162"
-                            height="185"
-                        />
-                        <p class="hero__card-description">
-                            Sweet and juicy, strawberries are packed with
-                            vitamin C and antioxidants, making them a delicious
-                            and healthy snack
-                        </p>
+
+                    <div class="hero__yellow-card-container">
+                        <ul class="hero__pills-container">
+                            <li class="hero__pills">#organic</li>
+                            <li class="hero__pills">#products</li>
+                            <li class="hero__pills">#basket</li>
+                            <li class="hero__pills">#fruits</li>
+                        </ul>
+                        <div class="hero__card yellow">
+                            <h2 class="hero__card-title">Fruit</h2>
+                            <img
+                                class="hero__text-fruit-card"
+                                srcset="
+                                    ./images/hero-basket-all.png,
+                                    ./images/hero-basket-all@2x.png 2x
+                                "
+                                src="./images/hero-basket-all.png"
+                                alt="Kosz z truskawkami"
+                                width="162"
+                                height="185"
+                            />
+                            <p class="hero__card-description">
+                                Sweet and juicy, strawberries are packed with
+                                vitamin C and antioxidants, making them a
+                                delicious and healthy snack
+                            </p>
+                        </div>
                     </div>
-                    <ul class="hero__pills-set">
-                        <li class="hero__pills">#organic</li>
-                        <li class="hero__pills">#products</li>
-                        <li class="hero__pills">#basket</li>
-                        <li class="hero__pills">#fruits</li>
-                    </ul>
                 </div>
             </div>
         </section>
@@ -527,7 +525,7 @@
         </section>
 
         <section class="contacts" id="contacts">
-            <div class="container red">
+            <div class="container">
                 <h2 class="contacts__paragraph-big">
                     Fresh harvest box has got you covered
                 </h2>
@@ -622,7 +620,7 @@
                     </form>
                 </div>
             </div>
-            <div class="contacts__modal is-open">
+            <div class="contacts__modal" style="display: none">
                 <button class="contacts__modal-button" type="button">
                     <svg
                         class="contacts__modal-button-shlash"
@@ -772,187 +770,213 @@
             </div>
         </footer>
 
-        <div class="backdrop is-open" data-modal>
-            <div class="modal">
-                <button class="modal__close-btn" type="button" data-modal-close>
-                    <svg class="modal__button" width="28" height="28">
-                        <use href="./images/icons.svg#icon-close"></use>
-                    </svg>
-                </button>
-
-                <section class="modal__your-order">
-                    <div class="container">
-                        <h2 class="modal__title">YOUR ORDER</h2>
-
-                        <ul class="modal__list">
-                            <li class="modal__picture strawberry__basket">
-                                <div class="modal__basket">
-                                    <button
-                                        class="modal__check-btn"
-                                        type="button"
-                                        data-modal-close
-                                    >
-                                        <svg
-                                            class="modal__check"
-                                            width="20"
-                                            height="20"
-                                        >
-                                            <use
-                                                href="./images/icons.svg#icon-pick"
-                                            ></use>
-                                        </svg>
-                                    </button>
-
-                                    <h3 class="modal__strawberry">
-                                        Strawberry Basket
-                                    </h3>
-                                    <p class="modal__plant">Plant</p>
-
-                                    <picture class="modal__photo">
-                                        <source
-                                            media="(max-width: 767px)"
-                                            srcset="
-                                                ./images/modalorder-basket-desktop.png    1x,
-                                                ./images/modalorder-basket-desktop@2x.png 2x
-                                            "
-                                        />
-                                        <source
-                                            media="(min-width: 768px)"
-                                            srcset="
-                                                ./images/modalorder-basket-tablet.png    1x,
-                                                ./images/modalorder-basket-tablet@2x.png 2x
-                                            "
-                                        />
-                                        <source
-                                            media="(min-width: 1158px)"
-                                            srcset="
-                                                ./images/modalorder-basket-mobile.png    1x,
-                                                ./images/modalorder-basket-mobile@2x.png 2x
-                                            "
-                                        />
-
-                                        <img
-                                            src="./images/modalorder-basket-desktop"
-                                            alt="modalorder-basket"
-                                        />
-                                    </picture>
-                                </div>
-                            </li>
-
-                            <li class="modal__picture apple__basket">
-                                <div class="modal__basket">
-                                    <button
-                                        class="modal__check-btn"
-                                        type="button"
-                                        data-modal-close
-                                    >
-                                        <svg
-                                            class="modal__check"
-                                            width="20"
-                                            height="20"
-                                        >
-                                            <use
-                                                href="./images/icons.svg#icon-pick"
-                                            ></use>
-                                        </svg>
-                                    </button>
-
-                                    <h3 class="modal__strawberry">
-                                        Apple Basket
-                                    </h3>
-                                    <p class="modal__plant">Plant</p>
-
-                                    <picture class="modal__photo">
-                                        <source
-                                            media="(max-width: 767px)"
-                                            srcset="
-                                                ./images/modalorder-bowl-desktop.png    1x,
-                                                ./images/modalorder-bowl-desktop@2x.png 2x
-                                            "
-                                        />
-                                        <source
-                                            media="(min-width: 768px)"
-                                            srcset="
-                                                ./images/modalorder-bowl-tablet.png    1x,
-                                                ./images/modalorder-bowl-tablet@2x.png 2x
-                                            "
-                                        />
-                                        <source
-                                            media="(min-width: 1158px)"
-                                            srcset="
-                                                ./images/modalorder-bowl-mobile.png    1x,
-                                                ./images/modalorder-bowl-mobile@2x.png 2x
-                                            "
-                                        />
-
-                                        <img
-                                            src="./images/modalorder-bowl-desktop.png "
-                                            alt="modalorder-bowl"
-                                        />
-                                    </picture>
-                                </div>
-                            </li>
-
-                            <li class="modal__picture fruits__basket">
-                                <div class="modal__basket">
-                                    <button
-                                        class="modal__check-btn"
-                                        type="button"
-                                        data-modal-close
-                                    >
-                                        <svg
-                                            class="modal__check"
-                                            width="20"
-                                            height="20"
-                                        >
-                                            <use
-                                                href="./images/icons.svg#icon-pick"
-                                            ></use>
-                                        </svg>
-                                    </button>
-
-                                    <h3 class="modal__strawberry">
-                                        Fruits Basket
-                                    </h3>
-                                    <p class="modal__plant">Plant</p>
-
-                                    <picture class="modal__photo">
-                                        <source
-                                            media="(max-width: 767px)"
-                                            srcset="
-                                                ./images/modalorder-box-desktop.png    1x,
-                                                ./images/modalorder-box-desktop@2x.png 2x
-                                            "
-                                        />
-                                        <source
-                                            media="(min-width: 768px)"
-                                            srcset="
-                                                ./images/modalorder-box-tablet.png    1x,
-                                                ./images/modalorder-box-tablet@2x.png 2x
-                                            "
-                                        />
-                                        <source
-                                            media="(min-width: 1158px)"
-                                            srcset="
-                                                ./images/modalorder-box-mobile.png    1x,
-                                                ./images/modalorder-box-mobile@2x.png 2x
-                                            "
-                                        />
-
-                                        <img
-                                            src="./images/modalorder-box-desktop.png "
-                                            alt="modalorder-box"
-                                        />
-                                    </picture>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
+        <div class="backdrop">
+            <div class="modal__your-order modal__background">
+                <div class="modal__title-part">
+                    <h2 class="modal__title">your order</h2>
+                    <button class="modal__close-btn" type="button">
+                        <svg class="modal__close" width="28" height="28">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
 
                 <!-- FORMULARZ -->
 
                 <form class="modal__form">
+                    <div class="modal__form-cards-flow">
+                        <div
+                            class="input__container-fruits modal__forms-cards--peach"
+                        >
+                            <div class="form__label-fruits">
+                                <!-- ============== -->
+                                <input
+                                    class="modal__input-checkbox check visually-hidden modal__temporary-absolute"
+                                    type="checkbox"
+                                    id="strawberries"
+                                    name="strawberries-basket"
+                                />
+                                <label
+                                    for="strawberries"
+                                    class="field-descr modal__temporary-absolute"
+                                >
+                                    <span class="modal__checkbox-symbol">
+                                        <svg
+                                            class="modal__input-checkbox"
+                                            width="8"
+                                            height="8"
+                                        >
+                                            <use
+                                                href="./images/icons.svg#icon-pick"
+                                            ></use>
+                                        </svg>
+                                    </span>
+                                </label>
+
+                                <!-- ============== -->
+                                <!-- <input
+                        class="modal__input-checkbox"
+                        type="checkbox"
+                        id="fruits-strawberry"
+                      /> -->
+                                <div class="modal__form-cards-title">
+                                    <h3 class="modal__basket-fruit-type">
+                                        Strawberry Basket
+                                    </h3>
+                                    <p class="modal__plant">Plant</p>
+                                </div>
+                                <picture class="modal__photo">
+                                    <source
+                                        media="(max-width: 767px)"
+                                        srcset="
+                                            ./images/modalorder-basket-desktop.png    1x,
+                                            ./images/modalorder-basket-desktop@2x.png 2x
+                                        "
+                                        width="88"
+                                        height="95"
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/modalorder-basket-tablet.png    1x,
+                                            ./images/modalorder-basket-tablet@2x.png 2x
+                                        "
+                                        width="133"
+                                        height="148"
+                                    />
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/modalorder-basket-mobile.png    1x,
+                                            ./images/modalorder-basket-mobile@2x.png 2x
+                                        "
+                                        width="173"
+                                        height="196"
+                                    />
+
+                                    <img
+                                        src="./images/modalorder-basket-desktop"
+                                        alt="basket with strawberries"
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div
+                            class="input__container-fruits modal__forms-cards--citrus"
+                        >
+                            <label
+                                class="modal__label"
+                                for="fruits-apple"
+                            ></label>
+
+                            <div class="form__label-fruits">
+                                <input
+                                    class="modal__input-checkbox"
+                                    type="checkbox"
+                                    id="fruits-apple"
+                                    name="apple-basket"
+                                />
+                                <div class="modal__form-cards-title">
+                                    <h3 class="modal__basket-fruit-type">
+                                        Apple Basket
+                                    </h3>
+                                    <p class="modal__plant">Plant</p>
+                                </div>
+                                <picture class="modal__photo">
+                                    <source
+                                        media="(max-width: 767.9px)"
+                                        srcset="
+                                            ./images/modalorder-bowl-desktop.png    1x,
+                                            ./images/modalorder-bowl-desktop@2x.png 2x
+                                        "
+                                        width="106"
+                                        height="95"
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/modalorder-bowl-tablet.png    1x,
+                                            ./images/modalorder-bowl-tablet@2x.png 2x
+                                        "
+                                        width="172"
+                                        height="148"
+                                    />
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/modalorder-bowl-mobile.png    1x,
+                                            ./images/modalorder-bowl-mobile@2x.png 2x
+                                        "
+                                        width="229"
+                                        height="196"
+                                    />
+                                    <img
+                                        src="./images/modalorder-bowl-desktop.png "
+                                        alt="bowl with apples"
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+
+                        <div
+                            class="input__container-fruits modal__forms-cards--mint"
+                        >
+                            <label
+                                class="modal__label"
+                                for="fruits-mix"
+                            ></label>
+
+                            <div class="form__label-fruits">
+                                <input
+                                    class="modal__input-checkbox"
+                                    type="checkbox"
+                                    id="fruits-mix"
+                                    name="fruits-mix-basket"
+                                />
+                                <div class="modal__form-cards-title">
+                                    <h3 class="modal__basket-fruit-type">
+                                        Fruits Basket
+                                    </h3>
+                                    <p class="modal__plant">Plant</p>
+                                </div>
+                                <picture class="modal__photo">
+                                    <source
+                                        media="(max-width: 767.9px)"
+                                        srcset="
+                                            ./images/modalorder-box-desktop.png    1x,
+                                            ./images/modalorder-box-desktop@2x.png 2x
+                                        "
+                                        width="107"
+                                        height="95"
+                                    />
+                                    <source
+                                        media="(min-width: 768px)"
+                                        srcset="
+                                            ./images/modalorder-box-tablet.png    1x,
+                                            ./images/modalorder-box-tablet@2x.png 2x
+                                        "
+                                        width="172"
+                                        height="148"
+                                    />
+                                    <source
+                                        media="(min-width: 1158px)"
+                                        srcset="
+                                            ./images/modalorder-box-mobile.png    1x,
+                                            ./images/modalorder-box-mobile@2x.png 2x
+                                        "
+                                        width="229"
+                                        height="196"
+                                    />
+
+                                    <img
+                                        src="./images/modalorder-box-desktop.png "
+                                        alt="box with fruits"
+                                    />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
                     <div class="input__container">
                         <label class="modal__label" for="user-name"></label>
 
@@ -961,9 +985,8 @@
                                 class="input"
                                 type="text"
                                 id="user-name"
-                                name="user-name"
+                                name="username"
                                 placeholder="Enter full name..."
-                                pattern="\w{5,30}"
                             />
                         </div>
                     </div>
@@ -974,11 +997,11 @@
                         <div class="form__label">
                             <input
                                 class="input"
-                                type="email"
+                                type="text"
                                 id="email"
                                 name="user-email"
                                 placeholder="Enter email..."
-                                pattern="\w{10,20}"
+                                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                                 required
                             />
                         </div>
@@ -992,7 +1015,7 @@
                                 class="input"
                                 type="number"
                                 id="card"
-                                name="card"
+                                name="text"
                                 pattern="\w{10,16}"
                                 placeholder="Enter card..."
                             />
@@ -1012,15 +1035,10 @@
                     </div>
 
                     <button class="modal__button-send" type="submit">
-                        Submit
+                        submit
                     </button>
-
-                    <div class="order__background"></div>
-                    <!-- ---jak to zrobić, żeby było przed formularzem, a nie za, bo nie widać? -->
                 </form>
             </div>
         </div>
-
-        <script src="./js/modal.js"></script>
     </body>
 </html>
