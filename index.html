@@ -95,44 +95,109 @@
         </header>
 
         <section class="hero">
-            <div class="container red">
+            <div class="container">
                 <h1 class="hero__heading">
-                    fresh harvest box <br />
-                    is your one-stop place for a delicious fruit basket
+                    fresh harvest box is your one-stop place for a delicious
+                    fruit basket
                 </h1>
                 <div class="hero__foto-strawberry">
-                    <img
-                        srcset="
-                            ./images/hero-blur-strawberry-desktop-min.png,
-                            ./images/hero-blur-strawberry-desktop@2x-min.png 2x
-                        "
-                        src="./images/hero-blur-strawberry-desktop-min.png"
-                        alt="truskawki"
-                        width="120"
-                    />
+                    <picture>
+                        <source
+                            media="(max-width: 767.9px)"
+                            srcset="
+                                ./images/hero-blur-strawberry-mobile.png,
+                                ./images/hero-blur-strawberry-mobile@2x.png 2x
+                            "
+                            width="64"
+                            height="64"
+                        />
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="
+                                ./images/hero-blur-strawberry-tablet.png,
+                                ./images/hero-blur-strawberry-tablet@2x.png 2x
+                            "
+                            width="124"
+                            height="124"
+                        />
+                        <source
+                            media="(min-width: 1280px)"
+                            srcset="
+                                ./images/hero-blur-strawberry-desktop.png,
+                                ./images/hero-blur-strawberry-desktop@2x.png 2x
+                            "
+                            width="136"
+                            height="136"
+                        />
+                        <img
+                            src="./images/hero-blur-strawberry-desktop-min.png"
+                            alt="strawberry"
+                        />
+                    </picture>
                 </div>
                 <div class="hero__foto-banana">
-                    <img
-                        class="hero__banana"
-                        srcset="
-                            ./images/hero-blur-banana-desktop-min.png,
-                            ./images/hero-blur-banana-desktop@2x-min.png 2x
-                        "
-                        src="./images/hero-blur-banana-desktop-min.png"
-                        alt="banany"
-                        width="183"
-                    />
+                    <picture>
+                        <source
+                            media="(max-width: 767.9px)"
+                            srcset="
+                                ./images/hero-blur-banana-mobile.png,
+                                ./images/hero-blur-banana-mobile@2x.png 2x
+                            "
+                            width="86"
+                            height="72"
+                        />
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="
+                                ./images/hero-blur-banana-tablet.png,
+                                ./images/hero-blur-banana-tablet@2x.png 2x
+                            "
+                            width="170"
+                            height="144"
+                        />
+                        <source
+                            media="(min-width: 1280px)"
+                            srcset="
+                                ./images/hero-blur-banana-desktop.png,
+                                ./images/hero-blur-banana-desktop@2x.png 2x
+                            "
+                            width="229"
+                            height="194"
+                        />
+                        <img
+                            src="./images/hero-blur-banana-desktop-min.png"
+                            alt="banana"
+                        />
+                    </picture>
                 </div>
                 <div class="hero__foto">
-                    <img
-                        class="hero__foto-girl"
-                        srcset="
-                            ./images/hero-girl-desktop-tablet-min.jpg,
-                            ./images/hero-girl-desktop-tablet@2x-min.jpg 2x
-                        "
-                        src="./images/hero-girl-desktop-tablet-min.jpg"
-                        alt="Dziewczyna z pomarańczą"
-                    />
+                    <picture>
+                        <source
+                            media="(max-width: 767.9px)"
+                            srcset="
+                                ./images/hero-girl-mobile.jpg,
+                                ./images/hero-girl-mobile@2x.jpg 2x
+                            "
+                            width="311"
+                            height="484"
+                        />
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="
+                                ./images/hero-girl-desktop-tablet.jpg,
+                                ./images/hero-girl-desktop-tablet@2x.jpg 2x
+                            "
+                            width="452"
+                            height="702"
+                        />
+
+                        <img
+                            class="hero__foto-girl"
+                            src="./images/hero-girl-desktop-tablet-min.jpg"
+                            alt="girl with an orange"
+                        />
+                    </picture>
+
                     <button type="button" class="hero__button-shop-now">
                         shop now
                     </button>
@@ -149,10 +214,10 @@
                         <img
                             class="hero__text-fruit-card"
                             srcset="
-                                ./images/hero-watermelon-all-min.png,
-                                ./images/hero-watermelon-all@2x-min.png 2x
+                                ./images/hero-watermelon-all.png,
+                                ./images/hero-watermelon-all@2x.png 2x
                             "
-                            src="./images/hero-watermelon-all-min.png"
+                            src="./images/hero-watermelon-all.png"
                             alt="Arbuzy"
                             width="200"
                             height="172"
@@ -175,10 +240,10 @@
                         <img
                             class="hero__text-fruit-card"
                             srcset="
-                                ./images/hero-basket-all-min.png,
-                                ./images/hero-basket-all@2x-min.png 2x
+                                ./images/hero-basket-all.png,
+                                ./images/hero-basket-all@2x.png 2x
                             "
-                            src="./images/hero-basket-all-min.png"
+                            src="./images/hero-basket-all.png"
                             alt="Kosz z truskawkami"
                             width="162"
                             height="185"
