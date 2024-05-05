@@ -20,7 +20,7 @@
 
     <body>
         <header class="header">
-            <div class="header__top container">
+            <div class="container">
                 <nav class="header__navigation">
                     <menu class="header__nav-list">
                         <li>
@@ -49,11 +49,11 @@
                 <svg class="header__hamburger-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-hamburger" />
                 </svg>
-                <a href="" class="header__basket">
+                <button class="header__basket">
                     <svg class="header__basket-color" width="28" height="28">
                         <use href="./images/icons.svg#icon-basket" />
                     </svg>
-                </a>
+                </button>
             </div>
 
             <div class="header-mobile-menu__container">
@@ -97,8 +97,9 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero__heading">
-                    fresh harvest box is your one-stop place for a delicious
-                    fruit basket
+                    fresh harvest box
+                    <span class="hero__no-wrap">is your one-stop</span> place
+                    for a delicious fruit basket
                 </h1>
                 <div class="hero__foto-strawberry">
                     <picture>
@@ -112,7 +113,7 @@
                             height="64"
                         />
                         <source
-                            media="(min-width: 768px)"
+                            media="(max-width: 1279.9px)"
                             srcset="
                                 ./images/hero-blur-strawberry-tablet.png,
                                 ./images/hero-blur-strawberry-tablet@2x.png 2x
@@ -143,17 +144,17 @@
                                 ./images/hero-blur-banana-mobile.png,
                                 ./images/hero-blur-banana-mobile@2x.png 2x
                             "
-                            width="86"
-                            height="72"
+                            width="75"
+                            height="53"
                         />
                         <source
-                            media="(min-width: 768px)"
+                            media="(max-width: 1279.9px)"
                             srcset="
                                 ./images/hero-blur-banana-tablet.png,
                                 ./images/hero-blur-banana-tablet@2x.png 2x
                             "
-                            width="170"
-                            height="144"
+                            width="147"
+                            height="105"
                         />
                         <source
                             media="(min-width: 1280px)"
@@ -161,8 +162,8 @@
                                 ./images/hero-blur-banana-desktop.png,
                                 ./images/hero-blur-banana-desktop@2x.png 2x
                             "
-                            width="229"
-                            height="194"
+                            width="198"
+                            height="140"
                         />
                         <img
                             src="./images/hero-blur-banana-desktop-min.png"
@@ -198,9 +199,7 @@
                         />
                     </picture>
 
-                    <button type="button" class="hero__button-shop-now">
-                        shop now
-                    </button>
+                    <button class="hero__button-shop-now">shop now</button>
                 </div>
 
                 <div class="hero__cards-container">
@@ -213,17 +212,19 @@
                         </p>
                         <div class="hero__card green">
                             <h2 class="hero__card-title">Fruit</h2>
-                            <img
-                                class="hero__text-fruit-card"
-                                srcset="
-                                    ./images/hero-watermelon-all.png,
-                                    ./images/hero-watermelon-all@2x.png 2x
-                                "
-                                src="./images/hero-watermelon-all.png"
-                                alt="Arbuzy"
-                                width="200"
-                                height="172"
-                            />
+                            <div class="hero__text-fruit-card-wrapper">
+                                <img
+                                    class="hero__text-fruit-card"
+                                    srcset="
+                                        ./images/hero-watermelon-all.png,
+                                        ./images/hero-watermelon-all@2x.png 2x
+                                    "
+                                    src="./images/hero-watermelon-all.png"
+                                    alt="Arbuzy"
+                                    width="200"
+                                    height="172"
+                                />
+                            </div>
                             <p class="hero__card-description">
                                 Refreshing and juicy, watermelon is the perfect
                                 summer treat and a great source of hydration
@@ -240,17 +241,19 @@
                         </ul>
                         <div class="hero__card yellow">
                             <h2 class="hero__card-title">Fruit</h2>
-                            <img
-                                class="hero__text-fruit-card"
-                                srcset="
-                                    ./images/hero-basket-all.png,
-                                    ./images/hero-basket-all@2x.png 2x
-                                "
-                                src="./images/hero-basket-all.png"
-                                alt="Kosz z truskawkami"
-                                width="162"
-                                height="185"
-                            />
+                            <div class="hero__text-fruit-card-wrapper">
+                                <img
+                                    class="hero__text-fruit-card"
+                                    srcset="
+                                        ./images/hero-basket-all.png,
+                                        ./images/hero-basket-all@2x.png 2x
+                                    "
+                                    src="./images/hero-basket-all.png"
+                                    alt="Kosz z truskawkami"
+                                    width="162"
+                                    height="185"
+                                />
+                            </div>
                             <p class="hero__card-description">
                                 Sweet and juicy, strawberries are packed with
                                 vitamin C and antioxidants, making them a
@@ -311,12 +314,13 @@
                         </p>
                     </li>
                 </ul>
-                <div class="how-it-works__gif">
-                    <img
-                        class="how-it-works__gif-animation"
-                        src="./images/howitworks-fresh-harvest-box.gif"
-                        alt="Fruits animation"
-                    />
+                <div class="how-it-works__video-container">
+                    <video class="how-it-works__video" autoplay muted loop>
+                        <source
+                            src="images/howitworks-video.mp4"
+                            type="video/mp4"
+                        />
+                    </video>
                 </div>
             </div>
         </section>
@@ -526,11 +530,11 @@
 
         <section class="contacts" id="contacts">
             <div class="container">
-                <h2 class="contacts__paragraph-big">
+                <h2 class="contacts__heading">
                     Fresh harvest box has got you covered
                 </h2>
-                <ul class="contacts__ul">
-                    <li class="contacts__li-melon">
+                <ul class="contacts__img-list">
+                    <li class="contacts__melon-list-item">
                         <picture>
                             <source
                                 media="(max-width: 767.9px)"
@@ -560,13 +564,13 @@
                                 height="502"
                             />
                             <img
-                                class="contacts__images-fruits"
+                                class="contacts__melon-img"
                                 src="./images/contatcs-melon-desktop.jpg"
                                 alt="Melon"
                             />
                         </picture>
                     </li>
-                    <li class="contacts__li-berries">
+                    <li class="contacts__berry-list-item">
                         <picture>
                             <source
                                 media="(max-width: 1279.9px)"
@@ -587,22 +591,22 @@
                                 height="502"
                             />
                             <img
-                                class="contacts__images-fruits"
+                                class="contacts__berry-img"
                                 src="./images/contatcs-berry-desktop.jpg"
                                 alt="American berries"
                             />
                         </picture>
                     </li>
                 </ul>
-                <div class="contacts__subscription">
-                    <p class="contacts__paragraph-small">
+                <div class="contacts__newsletter-container">
+                    <p class="contacts__newsletter-description">
                         Our boxes are packed with delicious, nutritious fruits
                         and vegetables, perfect for anyone looking to eat
                         healthier or support local farmers. Order your box today
                         and start enjoying the best that nature has to offer!
                     </p>
                     <form class="contacts__form">
-                        <label class="contacts__label">
+                        <label class="contacts__form-label">
                             <input
                                 class="contacts__form-input"
                                 name="email"
@@ -611,7 +615,7 @@
                             />
                         </label>
                         <button
-                            class="contacts__button"
+                            class="contacts__form-btn"
                             type="submit"
                             value="Send"
                         >
@@ -620,14 +624,14 @@
                     </form>
                 </div>
             </div>
-            <div class="contacts__modal" style="display: none">
-                <button class="contacts__modal-button" type="button">
+            <div class="modal-thanks">
+                <button class="modal-thanks__close-btn" type="button">
                     <svg
-                        class="contacts__modal-button-shlash"
-                        width="14"
-                        height="14"
+                        class="modal-thanks__close-btn-icon"
+                        width="24"
+                        height="24"
                     >
-                        <use href="./images/icons.svg#icon-close"></use>
+                        <use href="./images/icons.svg#icon-x"></use>
                     </svg>
                 </button>
                 <picture>
@@ -651,14 +655,14 @@
                     />
 
                     <img
-                        class="contacts__raspberry"
+                        class="modal-thanks__img"
                         src="./images/modalthank-raspberry-desktop-tablet.png"
-                        alt="raspeberries"
+                        alt="raspberries"
                     />
                 </picture>
-                <div class="contacts__text">
-                    <h3 class="contacts__h3">Thank you</h3>
-                    <p class="contacts__paragraph-modal">
+                <div class="modal-thanks__text-container">
+                    <h3 class="modal-thanks__header">Thank you</h3>
+                    <p class="modal-thanks__paragraph">
                         Thank you for your order! Our team is preparing your box
                         with fresh, delicious fruits and vegetables, and we'll
                         deliver it straight to your doorstep. We appreciate your
@@ -670,59 +674,74 @@
         </section>
 
         <footer class="footer">
-            <div class="container footer__mobile-box">
-                <div class="footer__photo">
-                    <img
-                        srcset="./images/footer-girl-desktop-tablet.jpg"
-                        src="./images/footer-girl-desktop-tablet@2x.jpg"
-                        width="349"
-                        alt="women"
-                    />
-                    <div class="footer__logo-set">
-                        <svg class="footer__icon-header" width="16" height="16">
-                            <use href="./images/icons.svg#icon-logo" />
-                        </svg>
-                        <p class="header__logo-text">Fresh Harvest Box</p>
-                    </div>
-                </div>
-                <nav class="footer__navigation">
-                    <ul class="footer__nav-list">
-                        <li>
-                            <a href="./index.html" class="footer__nav-link"
-                                >How it works</a
+            <div class="container">
+                <div class="footer__photo-and-nav-wrapper">
+                    <div class="footer__photo-container">
+                        <img
+                            srcset="./images/footer-girl-desktop-tablet.jpg"
+                            src="./images/footer-girl-desktop-tablet@2x.jpg"
+                            width="335"
+                            alt="women"
+                        />
+                        <div class="footer__logo">
+                            <svg
+                                class="footer__logo-icon"
+                                width="16"
+                                height="16"
                             >
-                        </li>
-                        <li><a href="" class="footer__nav-link">Fruits</a></li>
-                        <li>
-                            <a href="" class="footer__nav-link">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="footer__sm-adress">
-                    <ul class="footer__sm-icons">
-                        <li class="footer__sm-list">
+                                <use href="./images/icons.svg#icon-logo" />
+                            </svg>
+                            <p class="header__logo-text">Fresh Harvest Box</p>
+                        </div>
+                    </div>
+                    <nav class="footer__navigation">
+                        <ul class="footer__nav-list">
+                            <li>
+                                <a href="#how-it-works" class="footer__nav-link"
+                                    >How it works</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#fruits" class="footer__nav-link"
+                                    >Fruits</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#contacts" class="footer__nav-link"
+                                    >Contacts</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer__links-and-address-container">
+                    <ul class="footer__social-links-list">
+                        <li class="footer__social-links-list-item">
                             <a
-                                class="footer__sm-link"
+                                class="footer__social-link"
                                 href="https://www.facebook.com/"
+                                target="_blank"
                             >
                                 <svg
-                                    class="footer__sm-style"
-                                    width="28"
-                                    height="28"
+                                    class="footer__social-icon"
+                                    width="24"
+                                    height="24"
                                 >
                                     <use href="./images/icons.svg#icon-fb" />
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer__sm-list">
+                        <li class="footer__social-links-list-item">
                             <a
-                                class="footer__sm-link"
+                                class="footer__social-link"
                                 href="https://www.instagram.com/"
+                                target="_blank"
                             >
                                 <svg
-                                    class="footer__sm-style"
-                                    width="28"
-                                    height="28"
+                                    class="footer__social-icon"
+                                    width="24"
+                                    height="24"
                                 >
                                     <use
                                         href="./images/icons.svg#icon-instagram"
@@ -730,15 +749,16 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="footer__sm-list">
+                        <li class="footer__social-links-list-item">
                             <a
-                                class="footer__sm-link"
+                                class="footer__social-link"
                                 href="https://www.youtube.com/"
+                                target="_blank"
                             >
                                 <svg
-                                    class="footer__sm-style"
-                                    width="28"
-                                    height="28"
+                                    class="footer__social-icon"
+                                    width="24"
+                                    height="24"
                                 >
                                     <use
                                         href="./images/icons.svg#icon-youtube"
@@ -747,11 +767,12 @@
                             </a>
                         </li>
                     </ul>
+
                     <address>
                         <ul class="footer__address-list">
                             <li>
                                 <a
-                                    href="tel:++380684439426"
+                                    href="tel:+380684439426"
                                     class="footer__address tel"
                                     >+380 (68) 443-94-26</a
                                 >
@@ -759,9 +780,12 @@
                             <li>
                                 <a
                                     href="http://surl.li/skpcq"
+                                    target="_blank"
                                     class="footer__address place"
-                                    >1678 S. Pioneer Road Salt Lake City UT
-                                    84104</a
+                                    >1678 S. Pioneer Road Salt Lake City
+                                    <span class="footer__no-wrap"
+                                        >UT 84104</span
+                                    ></a
                                 >
                             </li>
                         </ul>
@@ -770,18 +794,16 @@
             </div>
         </footer>
 
-        <div class="backdrop">
+        <div class="modal__backdrop">
             <div class="modal__your-order modal__background">
-                <div class="modal__title-part">
-                    <h2 class="modal__title">your order</h2>
+                <div class="modal__title-container">
+                    <h2 class="modal__title">Your order</h2>
                     <button class="modal__close-btn" type="button">
-                        <svg class="modal__close" width="28" height="28">
+                        <svg class="modal__close-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-close"></use>
                         </svg>
                     </button>
                 </div>
-
-                <!-- FORMULARZ -->
 
                 <form class="modal__form">
                     <div class="modal__form-cards-flow">

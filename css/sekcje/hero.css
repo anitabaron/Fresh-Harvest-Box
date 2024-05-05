@@ -1,4 +1,3 @@
-/* ------------------------------MOBILE */
 .hero {
     padding-top: 56px;
 }
@@ -11,45 +10,55 @@
     font-family: var(--fnt-primary);
     font-size: 28px;
     font-weight: 500;
-    line-height: 100%;
-    letter-spacing: 0.01em;
+    line-height: 1;
+    letter-spacing: -0.01em;
     text-align: center;
     text-transform: uppercase;
     color: var(--clr-white);
 }
 
+.hero__no-wrap {
+    text-wrap: nowrap;
+}
+
 .hero__foto-strawberry {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 10px;
     z-index: -1;
 }
 
 .hero__foto-banana {
     position: absolute;
-    top: 60px;
-    left: 0;
-    transform: rotate(10deg);
+    top: 61px;
+    left: 14px;
+    transform: rotate(20deg);
     z-index: -1;
 }
 
 .hero__foto {
     position: relative;
-    top: -58px;
+    top: -70px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: -1;
-    margin-bottom: 26px;
+    z-index: -2;
+    padding: 12px;
+
+    border-radius: 250px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    background: linear-gradient(var(--clr-red), var(--clr-red)) padding-box,
+        linear-gradient(var(--clr-red) 20%, white) border-box;
 }
 
 .hero__foto-girl {
-    border-radius: 250px 250px 250px 250px;
-    outline: 1px solid var(--clr-white);
-    outline-offset: 20px;
+    border-radius: 250px;
 }
 
 .hero__button-shop-now {
+    font-family: var(--fnt-primary);
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -57,8 +66,8 @@
     display: block;
     cursor: pointer;
     position: absolute;
-    bottom: -40px;
-    font-weight: 500;
+    bottom: -28px;
+    font-weight: 600;
     font-size: 20px;
     line-height: 1;
     letter-spacing: -0.04em;
@@ -68,6 +77,7 @@
 }
 
 .hero__text-heading {
+    font-family: var(--fnt-primary);
     color: var(--clr-white);
     font-size: 14px;
     font-weight: 400;
@@ -98,26 +108,64 @@
     height: 387px;
     border-radius: 500px;
     padding: 28px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -1;
 }
 
 .hero__card-title {
+    font-family: var(--fnt-primary);
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16667;
     letter-spacing: -0.04em;
     text-align: center;
     color: var(--clr-white);
-    margin-bottom: 40px;
+}
+
+.hero__green-card-container .hero__card-title {
+    margin-bottom: 61px;
+}
+
+.hero__yellow-card-container .hero__card-title {
+    margin-bottom: 19px;
+}
+
+.hero__text-fruit-card-wrapper {
+    position: relative;
+}
+
+.hero__text-fruit-card-wrapper::after {
+    content: "";
+    width: 239px;
+    height: 38px;
+    position: absolute;
+    bottom: 53px;
+    left: -33px;
+    border-radius: 100%;
+    box-shadow: 0 50px 27px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+.hero__green-card-container .hero__text-fruit-card-wrapper::after {
+    bottom: 62px;
 }
 
 .hero__card-description {
-    font-weight: 500;
+    font-family: var(--fnt-primary);
     font-size: 12px;
     line-height: 1.16667;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.02em;
     text-transform: uppercase;
     text-align: center;
     color: var(--clr-white);
+    max-width: 163px;
+    z-index: 9999;
+}
+
+.hero__green-card-container .hero__card-description {
+    font-weight: 500;
 }
 
 .hero__pills-container {
@@ -130,6 +178,7 @@
 }
 
 .hero__pills {
+    font-family: var(--fnt-primary);
     border: 1px solid var(--clr-white);
     display: inline-block;
     border-radius: 1000px;
@@ -142,26 +191,21 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--clr-white);
-}
-
-.hero__pills-mobile {
     width: 132px;
-    height: 38px;
 }
 
-.hero__text-fruit-card {
-    margin: 0 auto;
+.hero__yellow-card-container .hero__text-fruit-card-wrapper {
+    margin-bottom: 17px;
 }
 
-/* ------------------------------TABLET */
-
-@media (1280px > width >= 768px) {
+@media (768px <= width < 1280px) {
     .hero {
         padding-top: 64px;
     }
 
     .hero__heading {
         font-size: 50px;
+        letter-spacing: 0.02em;
         line-height: 1.08;
     }
 
@@ -171,18 +215,24 @@
     }
 
     .hero__foto-banana {
-        top: 110px;
+        top: 118px;
+        left: 31px;
     }
 
     .hero__foto {
-        top: -110px;
-        margin-bottom: -31px;
+        top: -130px;
+        margin: 0 auto;
+        margin-bottom: -68px;
+        width: 486px;
+        padding: 17px;
     }
 
     .hero__button-shop-now {
+        position: absolute;
         width: 114px;
         height: 114px;
         font-size: 28px;
+        bottom: -18px;
     }
 
     .hero__text-heading {
@@ -196,19 +246,14 @@
 
     .hero__green-card-container {
         width: 279px;
+        margin-bottom: 0;
+        align-items: flex-end;
     }
 
     .hero__yellow-card-container {
         flex-direction: column-reverse;
+        align-items: flex-start;
         width: 279px;
-    }
-
-    .hero__card.green {
-        align-self: flex-end;
-    }
-
-    .hero__card.yellow {
-        align-self: flex-start;
     }
 
     .hero__pills-container {
@@ -219,18 +264,20 @@
         max-width: 300px;
         margin-right: 0;
     }
+
+    .hero__pills {
+        width: auto;
+    }
 }
 
-/* ------------------------------DESKTOP */
-
-@media (min-width: 1280px) {
+@media (width >= 1280px) {
     .hero {
         padding-top: 64px;
     }
 
     .hero__heading {
         font-size: 64px;
-        letter-spacing: -0.04em;
+        letter-spacing: 0.02em;
         max-width: 898px;
         margin: 0 auto;
     }
@@ -247,13 +294,18 @@
 
     .hero__foto {
         top: -140px;
+        margin: 0 auto;
         margin-bottom: 0;
+        width: 486px;
+        padding: 17px;
     }
 
     .hero__button-shop-now {
+        position: absolute;
         width: 114px;
         height: 114px;
         font-size: 28px;
+        bottom: -15px;
     }
 
     .hero__text-heading {
@@ -265,12 +317,23 @@
         position: absolute;
         top: 346px;
         left: 62px;
+        align-items: flex-start;
+        margin-bottom: 0;
     }
 
     .hero__yellow-card-container {
         flex-direction: column-reverse;
+        align-items: flex-end;
         position: absolute;
         top: 272px;
         right: 62px;
+    }
+
+    .hero__pills-container {
+        justify-content: flex-end;
+    }
+
+    .hero__pills {
+        width: auto;
     }
 }

@@ -17,5 +17,7 @@
         <symbol id="icon-pick" viewBox="0 0 32 32"><path d="M26.197 1.406a3.207 3.207 0 0 1 5.887 1.758 3.19 3.19 0 0 1-.588 1.85l.007-.01-17.386 25.645a3.208 3.208 0 0 1-5.299.011l-.007-.011-8.25-12.181a3.206 3.206 0 0 1 5.295-3.607l.006.009 5.61 8.266 14.722-21.73z"/></symbol>
         
         <symbol id="icon-close" viewBox="0 0 32 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M24.007 8.002 8.002 24.007m0-16.005 16.005 16.005"/></symbol>
+
+        <symbol id="icon-x" viewBox="0 0 32 32"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.667" d="M24 8 8 24M8 8l16 16" style="stroke:var(--color1, #fff)"/></symbol>
     </defs>
 </svg>

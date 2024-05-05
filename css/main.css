@@ -42,6 +42,10 @@ menu {
     padding-inline: 0;
 }
 
+button {
+    padding: 0;
+}
+
 img {
     display: block;
     max-inline-size: 100%;
@@ -81,7 +85,7 @@ body {
     font-weight: 500;
     font-size: 28px;
     line-height: 1;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
     color: var(--clr-white);

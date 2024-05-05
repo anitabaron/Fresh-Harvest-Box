@@ -2,7 +2,7 @@
     background-color: #fff;
 }
 
-.header__top {
+.header .container {
     position: relative;
 }
 
@@ -22,6 +22,7 @@
 }
 
 .header__logo-text {
+    font-family: var(--fnt-primary);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28571;
@@ -62,6 +63,7 @@
 }
 
 .header-mobile-menu__nav-link {
+    font-family: var(--fnt-primary);
     display: block;
     text-decoration: none;
     font-size: 14px;
@@ -97,11 +99,11 @@
     .header__nav-list {
         display: flex;
         gap: 16px;
-        font-weight: 400;
         padding: 16px 0;
     }
 
     .header__nav-link {
+        font-family: var(--fnt-primary);
         display: block;
         text-decoration: none;
         text-transform: capitalize;
@@ -117,6 +119,7 @@
     }
 
     .header__basket {
+        font-family: var(--fnt-primary);
         display: block;
         position: absolute;
         top: 11px;
@@ -140,11 +143,11 @@
     .header__nav-list {
         display: flex;
         gap: 20px;
-        font-weight: 400;
         padding: 16px 0;
     }
 
     .header__nav-link {
+        font-family: var(--fnt-primary);
         text-decoration: none;
         text-transform: capitalize;
         font-size: 14px;
