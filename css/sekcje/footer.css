@@ -200,3 +200,40 @@
         text-wrap: nowrap;
     }
 }
+
+.footer__nav-link {
+    position: relative;
+    transition: text-shadow 250ms ease-in-out;
+}
+
+.footer__nav-link:hover {
+    text-shadow: 0 0 1px #ae13326c;
+}
+
+.footer__nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #ae1332;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.footer__nav-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.footer__address {
+    transition: 250ms ease;
+}
+
+.footer__address:hover,
+.footer__address:focus {
+    text-shadow: 0 0 1px #ae1332;
+}
